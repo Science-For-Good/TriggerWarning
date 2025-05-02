@@ -248,3 +248,19 @@ create_diversity_supplement_analysis <- function(nih_grants) {
     data = diversity_grants
   ))
 }
+
+modify_grant_type_plot <- function(grant_type_plot) {
+  grant_type_plot + 
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)
+    )
+}
+
+# Function to update any ggplot to use angled x-axis labels
+# This is a utility function you can use for any plot
+add_angled_x_labels <- function(plot) {
+  plot + 
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)
+    )
+}

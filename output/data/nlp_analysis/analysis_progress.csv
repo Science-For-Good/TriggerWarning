@@ -1,198 +1,198 @@
 term,status,start_time,end_time,contexts_found,contexts_analyzed,scientific_count,political_count,ambiguous_count
-accessible,completed,1746030181.07909,1746030181.09566,0,0,0,0,0
-activism,completed,1746030181.10222,1746030181.11027,0,0,0,0,0
-activists,completed,1746030181.11444,1746030186.88511,NA,1,NA,NA,NA
-advocacy,completed,1746030186.89336,1746030186.94771,0,0,0,0,0
-advocate,completed,1746030186.95474,1746030186.97478,0,0,0,0,0
-advocates,completed,1746030186.97932,1746030186.98997,0,0,0,0,0
-affirming care,completed,1746030186.99453,1746030187.3356,0,0,0,0,0
-all-inclusive,completed,1746030187.34004,1746030187.3475,0,0,0,0,0
-allyship,completed,1746030187.35146,1746030187.36141,0,0,0,0,0
-anti-racism,completed,1746030187.36526,1746030187.3759,0,0,0,0,0
-antiracist,completed,1746030247.3892,1746030247.41737,0,0,0,0,0
-assigned at birth,completed,1746030247.42382,1746030247.43966,0,0,0,0,0
-assigned female at birth,completed,1746030247.45402,1746030247.47074,0,0,0,0,0
-assigned male at birth,completed,1746030247.47527,1746030247.4858,0,0,0,0,0
-at risk,completed,1746030247.4898,1746030247.50631,0,0,0,0,0
-barrier,completed,1746030247.51011,1746030247.52549,0,0,0,0,0
-barriers,completed,1746030247.52932,1746030247.55684,0,0,0,0,0
-belong,completed,1746030247.56313,1746030247.57887,0,0,0,0,0
-bias,completed,1746030247.58247,1746030247.59734,0,0,0,0,0
-biased,completed,1746030247.6013,1746030247.62268,0,0,0,0,0
-biased toward,completed,1746030307.63977,1746030307.66179,0,0,0,0,0
-biases,completed,1746030307.70286,1746030307.73755,0,0,0,0,0
-biases towards,completed,1746030307.742,1746030307.74883,0,0,0,0,0
-biologically female,completed,1746030307.75309,1746030307.76032,0,0,0,0,0
-biologically male,completed,1746030307.7952,1746030307.80574,0,0,0,0,0
-bipoc,completed,1746030307.8101,1746030307.82158,0,0,0,0,0
-black,completed,1746030307.82564,1746030307.88579,0,0,0,0,0
-breastfeed + people,completed,1746030307.89064,1746030308.03448,0,0,0,0,0
-breastfeed + person,completed,1746030308.0398,1746030308.04622,0,0,0,0,0
-chestfeed + people,completed,1746030308.0503,1746030308.0572,0,0,0,0,0
-chestfeed + person,completed,2025-04-30 16:26:50.911405,2025-04-30 16:26:50.917314,0,0,0,0,0
-clean energy,completed,2025-04-30 16:26:50.921179,2025-04-30 16:26:50.926838,0,0,0,0,0
-climate crisis,in-progress,2025-04-30 16:26:50.930967,NA,NA,NA,NA,NA,NA
-climate science,completed,2025-04-30 16:28:47.531279,2025-04-30 16:29:57.29632,NA,11,NA,NA,NA
-commercial sex worker,completed,2025-04-30 16:29:57.303363,2025-04-30 16:29:57.314726,0,0,0,0,0
-community diversity,completed,2025-04-30 16:29:57.319774,2025-04-30 16:29:57.326931,0,0,0,0,0
-community equity,completed,2025-04-30 16:29:57.332606,2025-04-30 16:30:03.428748,NA,1,NA,NA,NA
-confirmation bias,completed,2025-04-30 16:30:03.437171,2025-04-30 16:30:03.452339,0,0,0,0,0
-cultural competence,in-progress,2025-04-30 16:30:03.458934,NA,NA,NA,NA,NA,NA
-cultural differences,completed,2025-04-30 16:31:40.134195,2025-04-30 16:31:53.757695,NA,2,NA,NA,NA
-cultural heritage,in-progress,2025-04-30 16:31:53.766309,NA,NA,NA,NA,NA,NA
-cultural sensitivity,in-progress,2025-04-30 16:36:20.600824,NA,NA,NA,NA,NA,NA
-culturally appropriate,in-progress,2025-05-01 09:45:54.018124,NA,NA,NA,NA,NA,NA
-culturally responsive,in-progress,2025-05-01 09:48:45.729021,NA,NA,NA,NA,NA,NA
-dei,completed,2025-05-02 12:38:23.98516,2025-05-02 12:44:04.529396,NA,43,NA,NA,NA
-deia,completed,2025-05-02 12:44:04.537713,2025-05-02 12:44:50.613648,NA,4,NA,NA,NA
-deiab,completed,2025-05-02 12:44:50.623922,2025-05-02 12:44:50.643477,0,0,0,0,0
-deij,completed,2025-05-02 12:44:50.650519,2025-05-02 12:46:17.083187,NA,8,NA,NA,NA
-disabilities,in-progress,2025-05-02 12:46:17.091585,NA,NA,NA,NA,NA,NA
-disability,in-progress,2025-05-02 15:14:02.042433,NA,NA,NA,NA,NA,NA
-discriminated,completed,2025-05-02 15:16:18.464551,2025-05-02 15:16:18.473194,0,0,0,0,0
-discrimination,in-progress,2025-05-02 15:16:18.477694,NA,NA,NA,NA,NA,NA
-discriminatory,in-progress,2025-05-02 15:19:37.507584,NA,NA,NA,NA,NA,NA
-disparity,in-progress,2025-05-02 15:22:27.200616,NA,NA,NA,NA,NA,NA
-diverse,in-progress,2025-05-02 15:24:21.635674,NA,NA,NA,NA,NA,NA
-diverse backgrounds,pending,NA,NA,NA,NA,NA,NA,NA
-diverse communities,pending,NA,NA,NA,NA,NA,NA,NA
-diverse community,pending,NA,NA,NA,NA,NA,NA,NA
-diverse group,pending,NA,NA,NA,NA,NA,NA,NA
-diverse groups,pending,NA,NA,NA,NA,NA,NA,NA
-diversified,pending,NA,NA,NA,NA,NA,NA,NA
-diversify,pending,NA,NA,NA,NA,NA,NA,NA
-diversifying,pending,NA,NA,NA,NA,NA,NA,NA
-diversity,pending,NA,NA,NA,NA,NA,NA,NA
-enhance the diversity,pending,NA,NA,NA,NA,NA,NA,NA
-enhancing diversity,pending,NA,NA,NA,NA,NA,NA,NA
-environmental quality,pending,NA,NA,NA,NA,NA,NA,NA
-equal opportunity,pending,NA,NA,NA,NA,NA,NA,NA
-equality,pending,NA,NA,NA,NA,NA,NA,NA
-equitable,pending,NA,NA,NA,NA,NA,NA,NA
-equitableness,pending,NA,NA,NA,NA,NA,NA,NA
-equity,pending,NA,NA,NA,NA,NA,NA,NA
-ethnicity,pending,NA,NA,NA,NA,NA,NA,NA
-excluded,pending,NA,NA,NA,NA,NA,NA,NA
-exclusion,pending,NA,NA,NA,NA,NA,NA,NA
-expression,pending,NA,NA,NA,NA,NA,NA,NA
-female,pending,NA,NA,NA,NA,NA,NA,NA
-females,pending,NA,NA,NA,NA,NA,NA,NA
-feminism,pending,NA,NA,NA,NA,NA,NA,NA
-fostering inclusivity,pending,NA,NA,NA,NA,NA,NA,NA
-gbv,pending,NA,NA,NA,NA,NA,NA,NA
-gender,pending,NA,NA,NA,NA,NA,NA,NA
-gender based,pending,NA,NA,NA,NA,NA,NA,NA
-gender based violence,pending,NA,NA,NA,NA,NA,NA,NA
-gender diversity,pending,NA,NA,NA,NA,NA,NA,NA
-gender identity,pending,NA,NA,NA,NA,NA,NA,NA
-gender ideology,pending,NA,NA,NA,NA,NA,NA,NA
-gender-affirming care,pending,NA,NA,NA,NA,NA,NA,NA
-genders,pending,NA,NA,NA,NA,NA,NA,NA
-gulf of mexico,pending,NA,NA,NA,NA,NA,NA,NA
-hate speech,pending,NA,NA,NA,NA,NA,NA,NA
-health disparity,pending,NA,NA,NA,NA,NA,NA,NA
-health equity,pending,NA,NA,NA,NA,NA,NA,NA
-hispanic minority,pending,NA,NA,NA,NA,NA,NA,NA
-historically,pending,NA,NA,NA,NA,NA,NA,NA
-identity,pending,NA,NA,NA,NA,NA,NA,NA
-immigrants,pending,NA,NA,NA,NA,NA,NA,NA
-implicit bias,pending,NA,NA,NA,NA,NA,NA,NA
-implicit biases,pending,NA,NA,NA,NA,NA,NA,NA
-inclusion,pending,NA,NA,NA,NA,NA,NA,NA
-inclusive,pending,NA,NA,NA,NA,NA,NA,NA
-inclusive leadership,pending,NA,NA,NA,NA,NA,NA,NA
-inclusiveness,pending,NA,NA,NA,NA,NA,NA,NA
-inclusivity,pending,NA,NA,NA,NA,NA,NA,NA
-increase diversity,pending,NA,NA,NA,NA,NA,NA,NA
-increase the diversity,pending,NA,NA,NA,NA,NA,NA,NA
-indigenous community,pending,NA,NA,NA,NA,NA,NA,NA
-inequalities,pending,NA,NA,NA,NA,NA,NA,NA
-inequality,pending,NA,NA,NA,NA,NA,NA,NA
-inequitable,pending,NA,NA,NA,NA,NA,NA,NA
-inequities,pending,NA,NA,NA,NA,NA,NA,NA
-inequity,pending,NA,NA,NA,NA,NA,NA,NA
-injustice,pending,NA,NA,NA,NA,NA,NA,NA
-institutional,pending,NA,NA,NA,NA,NA,NA,NA
-intersectional,pending,NA,NA,NA,NA,NA,NA,NA
-intersectionality,pending,NA,NA,NA,NA,NA,NA,NA
-key groups,pending,NA,NA,NA,NA,NA,NA,NA
-key people,pending,NA,NA,NA,NA,NA,NA,NA
-key populations,pending,NA,NA,NA,NA,NA,NA,NA
-latinx,pending,NA,NA,NA,NA,NA,NA,NA
-lgbt,pending,NA,NA,NA,NA,NA,NA,NA
-lgbtq,pending,NA,NA,NA,NA,NA,NA,NA
-marginalize,pending,NA,NA,NA,NA,NA,NA,NA
-marginalized,pending,NA,NA,NA,NA,NA,NA,NA
-men who have sex with men,pending,NA,NA,NA,NA,NA,NA,NA
-mental health,pending,NA,NA,NA,NA,NA,NA,NA
-minorities,pending,NA,NA,NA,NA,NA,NA,NA
-minority,pending,NA,NA,NA,NA,NA,NA,NA
-most risk,pending,NA,NA,NA,NA,NA,NA,NA
-msm,pending,NA,NA,NA,NA,NA,NA,NA
-multicultural,pending,NA,NA,NA,NA,NA,NA,NA
-mx,pending,NA,NA,NA,NA,NA,NA,NA
-native american,pending,NA,NA,NA,NA,NA,NA,NA
-non-binary,pending,NA,NA,NA,NA,NA,NA,NA
-nonbinary,pending,NA,NA,NA,NA,NA,NA,NA
-oppression,pending,NA,NA,NA,NA,NA,NA,NA
-oppressive,pending,NA,NA,NA,NA,NA,NA,NA
-orientation,pending,NA,NA,NA,NA,NA,NA,NA
-people + uterus,pending,NA,NA,NA,NA,NA,NA,NA
-people-centered care,pending,NA,NA,NA,NA,NA,NA,NA
-person-centered,pending,NA,NA,NA,NA,NA,NA,NA
-person-centered care,pending,NA,NA,NA,NA,NA,NA,NA
-polarization,pending,NA,NA,NA,NA,NA,NA,NA
-political,pending,NA,NA,NA,NA,NA,NA,NA
-pollution,pending,NA,NA,NA,NA,NA,NA,NA
-pregnant people,pending,NA,NA,NA,NA,NA,NA,NA
-pregnant person,pending,NA,NA,NA,NA,NA,NA,NA
-pregnant persons,pending,NA,NA,NA,NA,NA,NA,NA
-prejudice,pending,NA,NA,NA,NA,NA,NA,NA
-privilege,pending,NA,NA,NA,NA,NA,NA,NA
-privileges,pending,NA,NA,NA,NA,NA,NA,NA
-promote diversity,pending,NA,NA,NA,NA,NA,NA,NA
-promoting diversity,pending,NA,NA,NA,NA,NA,NA,NA
-pronoun,pending,NA,NA,NA,NA,NA,NA,NA
-pronouns,pending,NA,NA,NA,NA,NA,NA,NA
-prostitute,pending,NA,NA,NA,NA,NA,NA,NA
-race,pending,NA,NA,NA,NA,NA,NA,NA
-race and ethnicity,pending,NA,NA,NA,NA,NA,NA,NA
-racial,pending,NA,NA,NA,NA,NA,NA,NA
-racial diversity,pending,NA,NA,NA,NA,NA,NA,NA
-racial identity,pending,NA,NA,NA,NA,NA,NA,NA
-racial inequality,pending,NA,NA,NA,NA,NA,NA,NA
-racial justice,pending,NA,NA,NA,NA,NA,NA,NA
-racially,pending,NA,NA,NA,NA,NA,NA,NA
-racism,pending,NA,NA,NA,NA,NA,NA,NA
-segregation,pending,NA,NA,NA,NA,NA,NA,NA
-sense of belonging,pending,NA,NA,NA,NA,NA,NA,NA
-sex,pending,NA,NA,NA,NA,NA,NA,NA
-sexual preferences,pending,NA,NA,NA,NA,NA,NA,NA
-sexuality,pending,NA,NA,NA,NA,NA,NA,NA
-social justice,pending,NA,NA,NA,NA,NA,NA,NA
-sociocultural,pending,NA,NA,NA,NA,NA,NA,NA
-socioeconomic,pending,NA,NA,NA,NA,NA,NA,NA
-status,pending,NA,NA,NA,NA,NA,NA,NA
-stereotype,pending,NA,NA,NA,NA,NA,NA,NA
-stereotypes,pending,NA,NA,NA,NA,NA,NA,NA
-systemic,pending,NA,NA,NA,NA,NA,NA,NA
-systemically,pending,NA,NA,NA,NA,NA,NA,NA
-they/them,pending,NA,NA,NA,NA,NA,NA,NA
-trans,pending,NA,NA,NA,NA,NA,NA,NA
-transgender,pending,NA,NA,NA,NA,NA,NA,NA
-transsexual,pending,NA,NA,NA,NA,NA,NA,NA
-trauma,pending,NA,NA,NA,NA,NA,NA,NA
-traumatic,pending,NA,NA,NA,NA,NA,NA,NA
-tribal,pending,NA,NA,NA,NA,NA,NA,NA
-unconscious bias,pending,NA,NA,NA,NA,NA,NA,NA
-underappreciated,pending,NA,NA,NA,NA,NA,NA,NA
-underprivileged,pending,NA,NA,NA,NA,NA,NA,NA
-underrepresentation,pending,NA,NA,NA,NA,NA,NA,NA
-underrepresented,pending,NA,NA,NA,NA,NA,NA,NA
-underserved,pending,NA,NA,NA,NA,NA,NA,NA
-undervalued,pending,NA,NA,NA,NA,NA,NA,NA
-victim,pending,NA,NA,NA,NA,NA,NA,NA
-victims,pending,NA,NA,NA,NA,NA,NA,NA
-vulnerable populations,pending,NA,NA,NA,NA,NA,NA,NA
-women,pending,NA,NA,NA,NA,NA,NA,NA
-women and underrepresented,pending,NA,NA,NA,NA,NA,NA,NA
+accessible,completed,2025-05-02 18:06:10.370872,2025-05-02 18:06:48.313122,NA,35,NA,NA,NA
+activism,completed,2025-05-02 18:06:48.319779,2025-05-02 18:06:51.065115,NA,3,NA,NA,NA
+activists,completed,2025-05-02 18:06:51.069753,2025-05-02 18:06:51.615524,NA,1,NA,NA,NA
+advocacy,completed,2025-05-02 18:06:51.620967,2025-05-02 18:07:35.48005,NA,41,NA,NA,NA
+advocate,completed,2025-05-02 18:07:35.487889,2025-05-02 18:08:31.751071,NA,50,NA,NA,NA
+advocates,completed,2025-05-02 18:08:31.763517,2025-05-02 18:08:47.874416,NA,16,NA,NA,NA
+affirming care,completed,2025-05-02 18:08:47.879174,2025-05-02 18:09:13.603457,NA,24,NA,NA,NA
+all-inclusive,completed,2025-05-02 18:09:13.60859,2025-05-02 18:09:13.618886,0,0,0,0,0
+allyship,completed,2025-05-02 18:09:13.623986,2025-05-02 18:09:16.487165,NA,3,NA,NA,NA
+anti-racism,completed,2025-05-02 18:09:16.492268,2025-05-02 18:09:27.742595,NA,10,NA,NA,NA
+antiracist,completed,2025-05-02 18:10:27.757525,2025-05-02 18:10:29.574905,NA,2,NA,NA,NA
+assigned at birth,completed,2025-05-02 18:10:29.582674,2025-05-02 18:10:48.582963,NA,17,NA,NA,NA
+assigned female at birth,completed,2025-05-02 18:10:48.591031,2025-05-02 18:11:04.305887,NA,14,NA,NA,NA
+assigned male at birth,completed,2025-05-02 18:11:04.31139,2025-05-02 18:11:16.169191,NA,11,NA,NA,NA
+at risk,completed,2025-05-02 18:11:16.17551,2025-05-02 18:12:08.979308,NA,50,NA,NA,NA
+barrier,completed,2025-05-02 18:12:08.984009,2025-05-02 18:13:02.110796,NA,50,NA,NA,NA
+barriers,completed,2025-05-02 18:13:02.115721,2025-05-02 18:13:54.679345,NA,50,NA,NA,NA
+belong,completed,2025-05-02 18:13:54.687221,2025-05-02 18:14:47.641668,NA,50,NA,NA,NA
+bias,completed,2025-05-02 18:14:47.646764,2025-05-02 18:15:40.925997,NA,50,NA,NA,NA
+biased,completed,2025-05-02 18:15:40.934882,2025-05-02 18:15:55.850826,NA,15,NA,NA,NA
+biased toward,completed,2025-05-02 18:16:55.870182,2025-05-02 18:16:57.564064,NA,2,NA,NA,NA
+biases,completed,2025-05-02 18:16:57.569252,2025-05-02 18:17:41.234753,NA,42,NA,NA,NA
+biases towards,completed,2025-05-02 18:17:41.239728,2025-05-02 18:17:41.249188,0,0,0,0,0
+biologically female,completed,2025-05-02 18:17:41.253812,2025-05-02 18:17:41.259905,0,0,0,0,0
+biologically male,completed,2025-05-02 18:17:41.263636,2025-05-02 18:17:41.27022,0,0,0,0,0
+bipoc,completed,2025-05-02 18:17:41.274558,2025-05-02 18:17:59.971239,NA,18,NA,NA,NA
+black,completed,2025-05-02 18:17:59.979984,2025-05-02 18:18:51.406814,NA,50,NA,NA,NA
+breastfeed + people,completed,2025-05-02 18:18:51.411773,2025-05-02 18:18:51.422492,0,0,0,0,0
+breastfeed + person,completed,2025-05-02 18:18:51.42746,2025-05-02 18:18:51.434264,0,0,0,0,0
+chestfeed + people,completed,2025-05-02 18:18:51.438229,2025-05-02 18:18:51.4446,0,0,0,0,0
+chestfeed + person,completed,2025-05-02 18:19:51.466447,2025-05-02 18:19:51.491427,0,0,0,0,0
+clean energy,completed,2025-05-02 18:19:51.497607,2025-05-02 18:19:51.520874,0,0,0,0,0
+climate crisis,completed,2025-05-02 18:19:51.527897,2025-05-02 18:19:54.267638,NA,3,NA,NA,NA
+climate science,completed,2025-05-02 18:19:54.273111,2025-05-02 18:20:06.104023,NA,11,NA,NA,NA
+commercial sex worker,completed,2025-05-02 18:20:06.112019,2025-05-02 18:20:06.12838,0,0,0,0,0
+community diversity,completed,2025-05-02 18:20:06.133937,2025-05-02 18:20:06.144594,0,0,0,0,0
+community equity,completed,2025-05-02 18:20:06.150459,2025-05-02 18:20:06.857229,NA,1,NA,NA,NA
+confirmation bias,completed,2025-05-02 18:20:06.862409,2025-05-02 18:20:06.871775,0,0,0,0,0
+cultural competence,completed,2025-05-02 18:20:06.876302,2025-05-02 18:20:21.421195,NA,13,NA,NA,NA
+cultural differences,completed,2025-05-02 18:20:21.429747,2025-05-02 18:20:23.541924,NA,2,NA,NA,NA
+cultural heritage,completed,2025-05-02 18:21:23.558644,2025-05-02 18:21:28.992706,NA,5,NA,NA,NA
+cultural sensitivity,completed,2025-05-02 18:21:28.997899,2025-05-02 18:21:38.018258,NA,8,NA,NA,NA
+culturally appropriate,completed,2025-05-02 18:21:38.023066,2025-05-02 18:22:04.082098,NA,22,NA,NA,NA
+culturally responsive,completed,2025-05-02 18:22:04.089518,2025-05-02 18:22:23.204653,NA,17,NA,NA,NA
+dei,completed,2025-05-02 18:22:23.21021,2025-05-02 18:23:06.52746,NA,43,NA,NA,NA
+deia,completed,2025-05-02 18:23:06.535345,2025-05-02 18:23:10.630841,NA,4,NA,NA,NA
+deiab,completed,2025-05-02 18:23:10.64024,2025-05-02 18:23:10.662386,0,0,0,0,0
+deij,completed,2025-05-02 18:23:10.672109,2025-05-02 18:23:17.795233,NA,8,NA,NA,NA
+disabilities,completed,2025-05-02 18:23:17.803257,2025-05-02 18:23:45.930823,NA,28,NA,NA,NA
+disability,completed,2025-05-02 18:23:45.936041,2025-05-02 18:24:39.970469,NA,50,NA,NA,NA
+discriminated,completed,2025-05-02 18:25:39.986915,2025-05-02 18:25:40.012169,0,0,0,0,0
+discrimination,completed,2025-05-02 18:25:40.019107,2025-05-02 18:26:34.133718,NA,50,NA,NA,NA
+discriminatory,completed,2025-05-02 18:26:34.141393,2025-05-02 18:26:54.384991,NA,20,NA,NA,NA
+disparity,completed,2025-05-02 18:26:54.394426,2025-05-02 18:27:50.760552,NA,50,NA,NA,NA
+diverse,completed,2025-05-02 18:27:50.765349,2025-05-02 18:28:41.59497,NA,50,NA,NA,NA
+diverse backgrounds,completed,2025-05-02 18:28:41.602404,2025-05-02 18:29:18.149739,NA,34,NA,NA,NA
+diverse communities,completed,2025-05-02 18:29:18.158009,2025-05-02 18:29:36.775334,NA,17,NA,NA,NA
+diverse community,completed,2025-05-02 18:29:36.780661,2025-05-02 18:29:45.9072,NA,8,NA,NA,NA
+diverse group,completed,2025-05-02 18:29:45.912346,2025-05-02 18:30:14.49225,NA,27,NA,NA,NA
+diverse groups,completed,2025-05-02 18:30:14.499792,2025-05-02 18:30:22.623693,NA,8,NA,NA,NA
+diversified,completed,2025-05-02 18:31:22.643599,2025-05-02 18:31:24.353886,NA,2,NA,NA,NA
+diversify,completed,2025-05-02 18:31:24.372789,2025-05-02 18:31:56.130925,NA,31,NA,NA,NA
+diversifying,completed,2025-05-02 18:31:56.135955,2025-05-02 18:32:09.806697,NA,13,NA,NA,NA
+diversity,completed,2025-05-02 18:32:09.815001,2025-05-02 18:33:01.719449,NA,50,NA,NA,NA
+enhance the diversity,completed,2025-05-02 18:33:01.726847,2025-05-02 18:33:03.95601,NA,2,NA,NA,NA
+enhancing diversity,completed,2025-05-02 18:33:03.960936,2025-05-02 18:33:06.841764,NA,3,NA,NA,NA
+environmental quality,completed,2025-05-02 18:33:06.849707,2025-05-02 18:33:07.577225,NA,1,NA,NA,NA
+equal opportunity,completed,2025-05-02 18:33:07.583704,2025-05-02 18:33:07.595879,0,0,0,0,0
+equality,completed,2025-05-02 18:33:07.600974,2025-05-02 18:33:57.478208,NA,46,NA,NA,NA
+equitable,completed,2025-05-02 18:33:57.485649,2025-05-02 18:34:51.191088,NA,50,NA,NA,NA
+equitableness,completed,2025-05-02 18:35:51.205087,2025-05-02 18:35:51.231017,0,0,0,0,0
+equity,completed,2025-05-02 18:35:51.238229,2025-05-02 18:36:44.071688,NA,50,NA,NA,NA
+ethnicity,completed,2025-05-02 18:36:44.079729,2025-05-02 18:37:39.456305,NA,50,NA,NA,NA
+excluded,completed,2025-05-02 18:37:39.465269,2025-05-02 18:38:18.72728,NA,38,NA,NA,NA
+exclusion,completed,2025-05-02 18:38:18.73234,2025-05-02 18:39:12.983373,NA,50,NA,NA,NA
+expression,completed,2025-05-02 18:39:12.989168,2025-05-02 18:40:04.687649,NA,50,NA,NA,NA
+female,completed,2025-05-02 18:40:04.693589,2025-05-02 18:40:56.571616,NA,50,NA,NA,NA
+females,completed,2025-05-02 18:40:56.579695,2025-05-02 18:41:28.724445,NA,30,NA,NA,NA
+feminism,completed,2025-05-02 18:41:28.732849,2025-05-02 18:41:28.774383,0,0,0,0,0
+fostering inclusivity,completed,2025-05-02 18:41:28.779645,2025-05-02 18:41:28.788677,0,0,0,0,0
+gbv,completed,2025-05-02 18:42:28.802814,2025-05-02 18:42:29.898138,NA,1,NA,NA,NA
+gender,completed,2025-05-02 18:42:29.9045,2025-05-02 18:43:23.977222,NA,50,NA,NA,NA
+gender based,completed,2025-05-02 18:43:23.985839,2025-05-02 18:43:23.999759,0,0,0,0,0
+gender based violence,completed,2025-05-02 18:43:24.005927,2025-05-02 18:43:24.014239,0,0,0,0,0
+gender diversity,completed,2025-05-02 18:43:24.019397,2025-05-02 18:43:50.384796,NA,24,NA,NA,NA
+gender identity,completed,2025-05-02 18:43:50.390163,2025-05-02 18:44:45.954508,NA,50,NA,NA,NA
+gender ideology,completed,2025-05-02 18:44:45.960456,2025-05-02 18:44:45.970554,0,0,0,0,0
+gender-affirming care,completed,2025-05-02 18:44:45.975301,2025-05-02 18:44:55.047679,NA,9,NA,NA,NA
+genders,completed,2025-05-02 18:44:55.055237,2025-05-02 18:45:04.669969,NA,9,NA,NA,NA
+gulf of mexico,completed,2025-05-02 18:45:04.679059,2025-05-02 18:45:04.693202,0,0,0,0,0
+hate speech,completed,2025-05-02 18:46:04.705246,2025-05-02 18:46:10.974809,NA,6,NA,NA,NA
+health disparity,completed,2025-05-02 18:46:10.988249,2025-05-02 18:47:08.230268,NA,50,NA,NA,NA
+health equity,completed,2025-05-02 18:47:08.236331,2025-05-02 18:48:03.683107,NA,50,NA,NA,NA
+hispanic minority,completed,2025-05-02 18:48:03.689041,2025-05-02 18:48:03.699004,0,0,0,0,0
+historically,completed,2025-05-02 18:48:03.711545,2025-05-02 18:48:54.83322,NA,50,NA,NA,NA
+identity,completed,2025-05-02 18:48:54.842141,2025-05-02 18:49:47.692989,NA,50,NA,NA,NA
+immigrants,completed,2025-05-02 18:49:47.699138,2025-05-02 18:49:55.066079,NA,7,NA,NA,NA
+implicit bias,completed,2025-05-02 18:49:55.074733,2025-05-02 18:50:04.115657,NA,9,NA,NA,NA
+implicit biases,completed,2025-05-02 18:50:04.121687,2025-05-02 18:50:06.876791,NA,3,NA,NA,NA
+inclusion,completed,2025-05-02 18:50:06.885372,2025-05-02 18:50:59.309149,NA,50,NA,NA,NA
+inclusive,completed,2025-05-02 18:51:59.326786,2025-05-02 18:52:51.74966,NA,50,NA,NA,NA
+inclusive leadership,completed,2025-05-02 18:52:51.755227,2025-05-02 18:52:51.764329,0,0,0,0,0
+inclusiveness,completed,2025-05-02 18:52:51.769036,2025-05-02 18:52:56.39508,NA,5,NA,NA,NA
+inclusivity,completed,2025-05-02 18:52:56.403865,2025-05-02 18:53:17.116311,NA,20,NA,NA,NA
+increase diversity,completed,2025-05-02 18:53:17.123629,2025-05-02 18:53:29.676034,NA,13,NA,NA,NA
+increase the diversity,completed,2025-05-02 18:53:29.681943,2025-05-02 18:53:42.584105,NA,13,NA,NA,NA
+indigenous community,completed,2025-05-02 18:53:42.592569,2025-05-02 18:53:45.386235,NA,3,NA,NA,NA
+inequalities,completed,2025-05-02 18:53:45.39454,2025-05-02 18:54:37.123665,NA,50,NA,NA,NA
+inequality,completed,2025-05-02 18:54:37.129182,2025-05-02 18:55:19.032303,NA,40,NA,NA,NA
+inequitable,completed,2025-05-02 18:55:19.03867,2025-05-02 18:55:42.101298,NA,22,NA,NA,NA
+inequities,completed,2025-05-02 18:56:42.114793,2025-05-02 18:57:37.36972,NA,50,NA,NA,NA
+inequity,completed,2025-05-02 18:57:37.376587,2025-05-02 18:58:31.487093,NA,50,NA,NA,NA
+injustice,completed,2025-05-02 18:58:31.492169,2025-05-02 18:58:53.1253,NA,22,NA,NA,NA
+institutional,completed,2025-05-02 18:58:53.133142,2025-05-02 18:59:44.288187,NA,50,NA,NA,NA
+intersectional,completed,2025-05-02 18:59:44.293402,2025-05-02 19:00:40.783658,NA,50,NA,NA,NA
+intersectionality,completed,2025-05-02 19:00:40.791716,2025-05-02 19:01:34.680929,NA,50,NA,NA,NA
+key groups,completed,2025-05-02 19:01:34.686598,2025-05-02 19:01:34.697312,0,0,0,0,0
+key people,completed,2025-05-02 19:01:34.712272,2025-05-02 19:01:34.722862,0,0,0,0,0
+key populations,completed,2025-05-02 19:01:34.727685,2025-05-02 19:01:40.960957,NA,6,NA,NA,NA
+latinx,completed,2025-05-02 19:01:40.966378,2025-05-02 19:02:34.981224,NA,50,NA,NA,NA
+lgbt,completed,2025-05-02 19:03:34.996455,2025-05-02 19:04:27.524408,NA,50,NA,NA,NA
+lgbtq,completed,2025-05-02 19:04:27.52998,2025-05-02 19:05:19.699976,NA,50,NA,NA,NA
+marginalize,completed,2025-05-02 19:05:19.705647,2025-05-02 19:06:10.012592,NA,50,NA,NA,NA
+marginalized,completed,2025-05-02 19:06:10.02077,2025-05-02 19:07:01.733829,NA,50,NA,NA,NA
+men who have sex with men,completed,2025-05-02 19:07:01.739654,2025-05-02 19:07:53.325161,NA,50,NA,NA,NA
+mental health,completed,2025-05-02 19:07:53.333271,2025-05-02 19:08:43.665962,NA,50,NA,NA,NA
+minorities,completed,2025-05-02 19:08:43.671591,2025-05-02 19:09:36.644205,NA,50,NA,NA,NA
+minority,completed,2025-05-02 19:09:36.654553,2025-05-02 19:10:30.02092,NA,50,NA,NA,NA
+most risk,completed,2025-05-02 19:10:30.027036,2025-05-02 19:10:32.126804,NA,2,NA,NA,NA
+msm,completed,2025-05-02 19:10:32.132095,2025-05-02 19:11:28.575661,NA,50,NA,NA,NA
+multicultural,completed,2025-05-02 19:12:28.588229,2025-05-02 19:12:39.570236,NA,10,NA,NA,NA
+mx,completed,2025-05-02 19:12:39.578988,2025-05-02 19:12:40.258256,NA,1,NA,NA,NA
+native american,completed,2025-05-02 19:12:40.265654,2025-05-02 19:13:14.699972,NA,31,NA,NA,NA
+non-binary,completed,2025-05-02 19:13:14.708894,2025-05-02 19:13:32.122338,NA,16,NA,NA,NA
+nonbinary,completed,2025-05-02 19:13:32.128131,2025-05-02 19:14:20.907551,NA,44,NA,NA,NA
+oppression,completed,2025-05-02 19:14:20.915539,2025-05-02 19:14:48.617725,NA,23,NA,NA,NA
+oppressive,completed,2025-05-02 19:14:48.626349,2025-05-02 19:14:52.732386,NA,4,NA,NA,NA
+orientation,completed,2025-05-02 19:14:52.741687,2025-05-02 19:15:44.388757,NA,50,NA,NA,NA
+people + uterus,completed,2025-05-02 19:15:44.394349,2025-05-02 19:15:44.403931,0,0,0,0,0
+people-centered care,completed,2025-05-02 19:15:44.418997,2025-05-02 19:15:44.430986,0,0,0,0,0
+person-centered,completed,2025-05-02 19:16:44.445199,2025-05-02 19:16:49.385665,NA,5,NA,NA,NA
+person-centered care,completed,2025-05-02 19:16:49.393433,2025-05-02 19:16:51.279519,NA,2,NA,NA,NA
+polarization,completed,2025-05-02 19:16:51.285079,2025-05-02 19:17:01.895388,NA,11,NA,NA,NA
+political,completed,2025-05-02 19:17:01.903144,2025-05-02 19:17:51.997804,NA,50,NA,NA,NA
+pollution,completed,2025-05-02 19:17:52.00293,2025-05-02 19:18:03.464333,NA,11,NA,NA,NA
+pregnant people,completed,2025-05-02 19:18:03.472855,2025-05-02 19:18:05.354,NA,2,NA,NA,NA
+pregnant person,completed,2025-05-02 19:18:05.363495,2025-05-02 19:18:08.04986,NA,3,NA,NA,NA
+pregnant persons,completed,2025-05-02 19:18:08.055415,2025-05-02 19:18:11.967449,NA,3,NA,NA,NA
+prejudice,completed,2025-05-02 19:18:11.973417,2025-05-02 19:18:35.00865,NA,21,NA,NA,NA
+privilege,completed,2025-05-02 19:18:35.032188,2025-05-02 19:18:49.541107,NA,14,NA,NA,NA
+privileges,completed,2025-05-02 19:19:49.557564,2025-05-02 19:19:50.088911,NA,1,NA,NA,NA
+promote diversity,completed,2025-05-02 19:19:50.097318,2025-05-02 19:19:55.053667,NA,5,NA,NA,NA
+promoting diversity,completed,2025-05-02 19:19:55.059289,2025-05-02 19:20:04.13751,NA,9,NA,NA,NA
+pronoun,completed,2025-05-02 19:20:04.143251,2025-05-02 19:20:10.408877,NA,6,NA,NA,NA
+pronouns,completed,2025-05-02 19:20:10.414753,2025-05-02 19:20:11.370541,NA,1,NA,NA,NA
+prostitute,completed,2025-05-02 19:20:11.376227,2025-05-02 19:20:11.385832,0,0,0,0,0
+race,completed,2025-05-02 19:20:11.390494,2025-05-02 19:21:04.583168,NA,50,NA,NA,NA
+race and ethnicity,completed,2025-05-02 19:21:04.592159,2025-05-02 19:21:18.891757,NA,14,NA,NA,NA
+racial,completed,2025-05-02 19:21:18.900026,2025-05-02 19:22:19.667427,NA,50,NA,NA,NA
+racial diversity,completed,2025-05-02 19:22:19.726992,2025-05-02 19:23:19.356978,NA,50,NA,NA,NA
+racial identity,completed,2025-05-02 19:24:19.371597,2025-05-02 19:24:38.752708,NA,17,NA,NA,NA
+racial inequality,completed,2025-05-02 19:24:38.757783,2025-05-02 19:24:41.146119,NA,2,NA,NA,NA
+racial justice,completed,2025-05-02 19:24:41.151636,2025-05-02 19:24:53.255662,NA,11,NA,NA,NA
+racially,completed,2025-05-02 19:24:53.260679,2025-05-02 19:25:48.626258,NA,50,NA,NA,NA
+racism,completed,2025-05-02 19:25:48.635094,2025-05-02 19:26:44.905924,NA,50,NA,NA,NA
+segregation,completed,2025-05-02 19:26:44.910714,2025-05-02 19:27:17.189951,NA,30,NA,NA,NA
+sense of belonging,completed,2025-05-02 19:27:17.198445,2025-05-02 19:28:10.620227,NA,50,NA,NA,NA
+sex,completed,2025-05-02 19:28:10.630222,2025-05-02 19:29:02.837386,NA,50,NA,NA,NA
+sexual preferences,completed,2025-05-02 19:29:02.842581,2025-05-02 19:29:02.853351,0,0,0,0,0
+sexuality,completed,2025-05-02 19:29:02.858563,2025-05-02 19:29:46.837138,NA,39,NA,NA,NA
+social justice,completed,2025-05-02 19:30:46.849469,2025-05-02 19:31:19.87565,NA,30,NA,NA,NA
+sociocultural,completed,2025-05-02 19:31:19.881804,2025-05-02 19:31:41.204803,NA,18,NA,NA,NA
+socioeconomic,completed,2025-05-02 19:31:41.214294,2025-05-02 19:32:36.547567,NA,50,NA,NA,NA
+status,completed,2025-05-02 19:32:36.552937,2025-05-02 19:33:26.871781,NA,50,NA,NA,NA
+stereotype,completed,2025-05-02 19:33:26.881339,2025-05-02 19:33:56.148006,NA,29,NA,NA,NA
+stereotypes,completed,2025-05-02 19:33:56.156548,2025-05-02 19:34:22.737353,NA,26,NA,NA,NA
+systemic,completed,2025-05-02 19:34:22.743046,2025-05-02 19:35:14.136228,NA,50,NA,NA,NA
+systemically,completed,2025-05-02 19:35:14.147291,2025-05-02 19:35:17.011451,NA,3,NA,NA,NA
+they/them,completed,2025-05-02 19:35:17.020132,2025-05-02 19:35:17.046382,0,0,0,0,0
+trans,completed,2025-05-02 19:35:17.054579,2025-05-02 19:36:10.815758,NA,50,NA,NA,NA
+transgender,completed,2025-05-02 19:37:10.830219,2025-05-02 19:38:06.807354,NA,50,NA,NA,NA
+transsexual,completed,2025-05-02 19:38:06.815427,2025-05-02 19:38:06.828765,0,0,0,0,0
+trauma,completed,2025-05-02 19:38:06.835013,2025-05-02 19:39:01.750605,NA,50,NA,NA,NA
+traumatic,completed,2025-05-02 19:39:01.757702,2025-05-02 19:39:31.668054,NA,28,NA,NA,NA
+tribal,completed,2025-05-02 19:39:31.673675,2025-05-02 19:39:46.006503,NA,14,NA,NA,NA
+unconscious bias,completed,2025-05-02 19:39:46.015253,2025-05-02 19:39:48.8724,NA,3,NA,NA,NA
+underappreciated,completed,2025-05-02 19:39:48.879794,2025-05-02 19:39:48.892472,0,0,0,0,0
+underprivileged,completed,2025-05-02 19:39:48.898342,2025-05-02 19:39:49.643565,NA,1,NA,NA,NA
+underrepresentation,completed,2025-05-02 19:39:49.652571,2025-05-02 19:40:01.891267,NA,12,NA,NA,NA
+underrepresented,completed,2025-05-02 19:40:01.896396,2025-05-02 19:40:56.584996,NA,50,NA,NA,NA
+underserved,completed,2025-05-02 19:41:56.594557,2025-05-02 19:42:52.264244,NA,50,NA,NA,NA
+undervalued,completed,2025-05-02 19:42:52.273486,2025-05-02 19:42:52.28683,0,0,0,0,0
+victim,completed,2025-05-02 19:42:52.292411,2025-05-02 19:43:42.894246,NA,47,NA,NA,NA
+victims,completed,2025-05-02 19:43:42.899555,2025-05-02 19:43:49.343262,NA,6,NA,NA,NA
+vulnerable populations,completed,2025-05-02 19:43:49.348792,2025-05-02 19:44:47.208544,NA,50,NA,NA,NA
+women,completed,2025-05-02 19:44:47.213744,2025-05-02 19:45:40.364689,NA,50,NA,NA,NA
+women and underrepresented,completed,2025-05-02 19:45:40.36971,2025-05-02 19:45:44.265068,NA,4,NA,NA,NA

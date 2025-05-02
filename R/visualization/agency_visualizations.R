@@ -1,33 +1,30 @@
 # agency_visualizations.R - Agency-specific visualization functions
 
-# Create NIH institute visualizations
+# Create visualization of NIH institutes
 create_nih_institute_plot <- function(nih_grants) {
-  # Calculate institute counts
-  nih_inst_counts <- nih_grants |>
-    filter(!is.na(institute)) |>
-    group_by(institute) |>
+  # Count by institute
+  institute_counts <- nih_grants %>%
+    filter(!is.na(institute)) %>%
+    group_by(institute) %>%
     summarize(
       terminations = n(),
       with_terms = sum(has_trigger_term, na.rm = TRUE),
       percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
       .groups = "drop"
-    ) |>
-    arrange(desc(terminations)) |>
-    head(10)  # Take top 10 for visualization
+    ) %>%
+    arrange(desc(terminations)) %>%
+    # Limit to top institutes to avoid crowding
+    head(10)
   
-  # Debug
-  cat("NIH institute counts:\n")
-  print(nih_inst_counts)
-  
-  # Create visualization
-  nih_inst_plot <- ggplot(nih_inst_counts |> 
-                            mutate(institute = reorder(institute, terminations)), 
-                          aes(x = institute, y = terminations, fill = percent_with_terms)) +
+  # Create visualization with angled x-axis labels
+  institute_plot <- ggplot(institute_counts %>% 
+                             mutate(institute = reorder(institute, terminations)), 
+                           aes(x = institute, y = terminations, fill = percent_with_terms)) +
     geom_col() +
     scale_fill_gradient(low = "#5EECC2", high = "#FF7400", 
                         name = "% with\ntrigger terms") +
-    geom_text(aes(label = paste0(terminations)),
-              position = position_stack(vjust = 0.5),
+    geom_text(aes(label = terminations),
+              vjust = -0.5,
               color = "#13151F",
               fontface = "bold") +
     theme_minimal() +
@@ -35,7 +32,8 @@ create_nih_institute_plot <- function(nih_grants) {
       plot.title = element_text(size = 16, face = "bold"),
       plot.subtitle = element_text(size = 14),
       axis.title = element_text(size = 12, face = "bold"),
-      axis.text.x = element_text(angle = 45, hjust = 1)
+      # Add these settings for angled x-axis labels
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1) 
     ) +
     labs(
       title = "NIH Terminations by Institute",
@@ -44,7 +42,7 @@ create_nih_institute_plot <- function(nih_grants) {
       y = "Number of Terminations"
     )
   
-  return(nih_inst_plot)
+  return(institute_plot)
 }
 
 # Create term distribution by NIH institute
@@ -114,31 +112,27 @@ create_nih_term_distribution_plot <- function(nih_grants, all_term_counts) {
 
 # Create NSF directorate visualizations
 create_nsf_directorate_plot <- function(nsf_grants) {
-  # Calculate directorate counts
-  nsf_dir_counts <- nsf_grants |>
-    filter(!is.na(directorate_abbrev)) |>
-    group_by(directorate = directorate_abbrev, directorate_name = directorate) |>
+  # Count by directorate
+  directorate_counts <- nsf_grants %>%
+    filter(!is.na(directorate)) %>%
+    group_by(directorate) %>%
     summarize(
       terminations = n(),
       with_terms = sum(has_trigger_term, na.rm = TRUE),
       percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
       .groups = "drop"
-    ) |>
+    ) %>%
     arrange(desc(terminations))
   
-  # Debug
-  cat("NSF directorate counts:\n")
-  print(nsf_dir_counts)
-  
-  # Create visualization
-  nsf_dir_plot <- ggplot(nsf_dir_counts |> 
-                           mutate(directorate = reorder(directorate, terminations)), 
-                         aes(x = directorate, y = terminations, fill = percent_with_terms)) +
+  # Create visualization with angled labels
+  directorate_plot <- ggplot(directorate_counts %>% 
+                               mutate(directorate = reorder(directorate, terminations)), 
+                             aes(x = directorate, y = terminations, fill = percent_with_terms)) +
     geom_col() +
     scale_fill_gradient(low = "#5EECC2", high = "#FF7400", 
                         name = "% with\ntrigger terms") +
-    geom_text(aes(label = paste0(terminations)),
-              position = position_stack(vjust = 0.5),
+    geom_text(aes(label = terminations),
+              vjust = -0.5,
               color = "#13151F",
               fontface = "bold") +
     theme_minimal() +
@@ -146,7 +140,8 @@ create_nsf_directorate_plot <- function(nsf_grants) {
       plot.title = element_text(size = 16, face = "bold"),
       plot.subtitle = element_text(size = 14),
       axis.title = element_text(size = 12, face = "bold"),
-      axis.text.x = element_text(angle = 45, hjust = 1)
+      # Add these settings for angled x-axis labels
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)
     ) +
     labs(
       title = "NSF Terminations by Directorate",
@@ -155,7 +150,7 @@ create_nsf_directorate_plot <- function(nsf_grants) {
       y = "Number of Terminations"
     )
   
-  return(nsf_dir_plot)
+  return(directorate_plot)
 }
 
 # Create term distribution by NSF directorate

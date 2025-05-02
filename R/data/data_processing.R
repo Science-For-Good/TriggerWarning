@@ -1,7 +1,71 @@
 # Data loading and processing functions
 
+# Updated function to standardize institute names
+standardize_institute_names <- function(df) {
+  # First detect if institute column exists
+  if (!"institute" %in% names(df)) {
+    return(df)  # Return unchanged if institute column doesn't exist
+  }
+  
+  # Create lookup table for institute name standardization
+  institute_mapping <- c(
+    # Common NIH institute variations
+    "NIMH - National Institute of Mental Health" = "NIMH",
+    "NIMH-National Institute of Mental Health" = "NIMH",
+    "National Institute of Mental Health" = "NIMH",
+    
+    "NIMHD - National Institute on Minority Health and Health Disparities" = "NIMHD",
+    "NIMHD-National Institute on Minority Health and Health Disparities" = "NIMHD",
+    "National Institute on Minority Health and Health Disparities" = "NIMHD",
+    
+    "NIAID - National Institute of Allergy and Infectious Diseases" = "NIAID",
+    "NIAID-National Institute of Allergy and Infectious Diseases" = "NIAID",
+    "National Institute of Allergy and Infectious Diseases" = "NIAID",
+    "Allergy and Infectious Diseases" = "NIAID",
+    
+    "NCI - National Cancer Institute" = "NCI",
+    "NCI-National Cancer Institute" = "NCI",
+    "National Cancer Institute" = "NCI",
+    
+    "NIGMS - National Institute of General Medical Sciences" = "NIGMS",
+    "NIGMS-National Institute of General Medical Sciences" = "NIGMS",
+    "National Institute of General Medical Sciences" = "NIGMS",
+    
+    "NICHD - National Institute of Child Health and Human Development" = "NICHD",
+    "NICHD-National Institute of Child Health and Human Development" = "NICHD",
+    "National Institute of Child Health and Human Development" = "NICHD",
+    "Eunice Kennedy Shriver National Institute of Child Health and Human Development" = "NICHD",
+    
+    "OD - NIH Office of the Director" = "OD",
+    "OD-NIH Office of the Director" = "OD",
+    "NIH Office of the Director" = "OD",
+    "Office of the Director" = "OD"
+  )
+  
+  # Apply mapping to standardize names
+  df <- df %>%
+    mutate(
+      # Create a standardized institute name
+      institute_std = case_when(
+        institute %in% names(institute_mapping) ~ institute_mapping[institute],
+        # For any other entries, try to extract the acronym only (assume it's at the beginning)
+        grepl(" - ", institute) ~ str_extract(institute, "^[A-Z0-9]+(?= - )"),
+        grepl("-", institute) ~ str_extract(institute, "^[A-Z0-9]+(?=-)"),
+        # If all else fails, keep the original
+        TRUE ~ institute
+      )
+    )
+  
+  # Replace the original institute column with standardized version
+  df$institute <- df$institute_std
+  df$institute_std <- NULL
+  
+  return(df)
+}
+
+
+
 # Load and process data
-# Updated load_data function to incorporate both NIH datasets
 load_data <- function(trigger_terms_path, nih_taggs_path, nih_airtable_path, nsf_grants_path) {
   # Load trigger terms
   trigger_terms <- read_csv(trigger_terms_path, show_col_types = FALSE) |>
@@ -135,6 +199,7 @@ load_data <- function(trigger_terms_path, nih_taggs_path, nih_airtable_path, nsf
   nsf_grants <- add_administration(nsf_grants)
   
   # Combine datasets
+  combined_nih <- standardize_institute_names(combined_nih)
   all_grants <- bind_rows(combined_nih, nsf_grants)
   
   # Count occurrences of each trigger term

@@ -324,6 +324,56 @@ if (run_nlp_analysis) {
   save_plot("top_false_positives", top_fp_plot, width = 10, height = 8, output_dir = nlp_viz_dir)
 }
 
+source("R/visualization/nlp_visualizations.R")
+
+# After the NLP analysis is complete:
+if (run_nlp_analysis) {
+  # Create NLP visualization directory
+  nlp_viz_dir <- file.path(figures_dir, "nlp_analysis")
+  dir.create(nlp_viz_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  # Generate all NLP visualizations from summary data only
+  cat("\nGenerating comprehensive NLP visualizations...\n")
+  
+  # Generate visualizations using the simplified approach
+  nlp_plots <- create_nlp_visualizations(
+    nlp_results_dir = nlp_dirs$output_dir,
+    output_dir = nlp_viz_dir
+  )
+  
+  # Optionally - create a custom false positive rates visualization
+  # This is similar to what you already had in your code
+  if (exists("fp_rates") || file.exists(file.path(nlp_dirs$output_dir, "false_positive_rates.csv"))) {
+    # Load the data if needed
+    if (!exists("fp_rates")) {
+      fp_rates <- read_csv(file.path(nlp_dirs$output_dir, "false_positive_rates.csv"), 
+                           show_col_types = FALSE)
+    }
+    
+    # Create the plot
+    top_fp_plot <- ggplot(head(fp_rates, 20), 
+                          aes(x = reorder(term, false_positive_rate), y = false_positive_rate)) +
+      geom_col(fill = "#5EECC2") +
+      coord_flip() +
+      theme_minimal() +
+      theme(
+        plot.title = element_text(size = 16, face = "bold"),
+        plot.subtitle = element_text(size = 14)
+      ) +
+      labs(
+        title = "Top 20 Terms with Highest False Positive Rates",
+        subtitle = "Percentage of contexts classified as scientific/technical",
+        x = "Term", 
+        y = "False Positive Rate (%)"
+      )
+    
+    # Save using the utility function that saves both PNG and PDF
+    save_nlp_plot("top_false_positives", top_fp_plot, width = 10, height = 8, output_dir = nlp_viz_dir)
+  }
+  
+  cat("NLP visualization complete!\n")
+}
+
 # Final summary message
 cat("\nComprehensive analysis completed!\n")
 cat("Created visualizations in:", figures_dir, "\n")

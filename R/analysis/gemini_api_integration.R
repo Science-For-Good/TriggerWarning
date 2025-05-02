@@ -1,3 +1,205 @@
+#' Securely retrieve and validate the API key
+#' @return The API key as a string
+get_api_key <- function() {
+  # Try environment variable first (most secure method)
+  env_key <- Sys.getenv("GEMINI_API_KEY")
+  if (env_key != "") {
+    # Trim any whitespace that might have been accidentally included
+    env_key <- trimws(env_key)
+    return(env_key)
+  }
+  
+  # Then try config file
+  config_file <- file.path(Sys.getenv("HOME"), ".gemini_config")
+  if (file.exists(config_file)) {
+    key_data <- readLines(config_file, warn = FALSE)
+    if (length(key_data) > 0) {
+      # Get first non-comment line
+      for (line in key_data) {
+        if (!startsWith(trimws(line), "#") && nchar(trimws(line)) > 10) {
+          # Trim whitespace to avoid invisible characters
+          return(trimws(line))
+        }
+      }
+    }
+  }
+  
+  # Get a key from another potential location - project-specific config
+  local_config <- ".gemini_config"
+  if (file.exists(local_config)) {
+    key_data <- readLines(local_config, warn = FALSE)
+    if (length(key_data) > 0) {
+      for (line in key_data) {
+        if (!startsWith(trimws(line), "#") && nchar(trimws(line)) > 10) {
+          return(trimws(line))
+        }
+      }
+    }
+  }
+  
+  # Try checking for a different environment variable name
+  alt_key <- Sys.getenv("GOOGLE_API_KEY")
+  if (alt_key != "") {
+    return(trimws(alt_key))
+  }
+  
+  # If no valid key found, create a placeholder for manual update
+  cat("⚠️ No valid API key found. Please enter a valid Google Gemini API key: ")
+  user_key <- readline()
+  
+  if (nchar(user_key) > 10) {
+    # Save the key to config file for future use
+    dir.create(dirname(config_file), recursive = TRUE, showWarnings = FALSE)
+    writeLines(c("# Google Gemini API key", user_key), config_file)
+    Sys.chmod(config_file, mode = "0600")  # Secure permissions
+    cat("✅ API key saved to", config_file, "\n")
+    return(user_key)
+  } else {
+    stop("No valid API key provided. Please obtain a key from https://ai.google.dev/tutorials/setup")
+  }
+}
+
+#' Validate API key with a simple request
+#' @param api_key The API key to validate
+#' @return Logical indicating if the key is valid
+validate_api_key <- function(api_key = NULL) {
+  if (is.null(api_key)) {
+    api_key <- get_api_key()
+  }
+  
+  cat("Validating API key (length:", nchar(api_key), ")...\n")
+  
+  # Print the first and last few characters to help with debugging
+  if (nchar(api_key) > 10) {
+    first_chars <- substr(api_key, 1, 5)
+    last_chars <- substr(api_key, nchar(api_key) - 4, nchar(api_key))
+    cat("Key format: ", first_chars, "...", last_chars, "\n", sep = "")
+  }
+  
+  # Create a minimal test request
+  test_body <- list(
+    contents = list(
+      list(
+        parts = list(
+          list(text = "Return only the word SUCCESS")
+        )
+      )
+    )
+  )
+  
+  # Convert to JSON
+  json_body <- jsonlite::toJSON(test_body, auto_unbox = TRUE)
+  
+  # Base URL without parameters
+  base_url <- "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+  
+  cat("Sending test request to Gemini API...\n")
+  
+  # Execute the HTTP request properly
+  response <- tryCatch({
+    httr::POST(
+      url = base_url,
+      query = list(key = api_key),  # Add as query parameter
+      body = json_body,
+      httr::add_headers("Content-Type" = "application/json"),
+      encode = "json"  # Use json encoding
+    )
+  }, error = function(e) {
+    cat("Error:", conditionMessage(e), "\n")
+    return(NULL)
+  })
+  
+  if (is.null(response)) {
+    cat("❌ API test failed: No response received\n")
+    return(FALSE)
+  }
+  
+  status <- httr::status_code(response)
+  cat("Response status code:", status, "\n")
+  
+  if (status == 200) {
+    cat("✅ API key is valid!\n")
+    return(TRUE)
+  } else {
+    # Print the error response to help diagnose
+    error_content <- httr::content(response, "text")
+    cat("❌ API key validation failed with status", status, "\n")
+    cat("Error response:", error_content, "\n")
+    
+    # Check if it's an API key issue
+    if (status == 400 && grepl("API key not valid", error_content)) {
+      cat("\n⚠️ The API key appears to be invalid. Please verify it in the Google AI Studio.\n")
+      cat("Visit: https://ai.google.dev/ to create or find your API key.\n")
+    }
+    
+    return(FALSE)
+  }
+}
+
+#' Get a new API key from the user and test it
+#' @return A valid API key or NULL if validation fails
+get_and_test_new_key <- function() {
+  cat("\n===== Google Gemini API Key Setup =====\n")
+  cat("To use the Gemini API, you need a valid API key from Google AI Studio.\n")
+  cat("1. Visit https://ai.google.dev/\n")
+  cat("2. Create a project if you don't have one\n")
+  cat("3. Create an API key for Gemini\n\n")
+  
+  cat("Please enter your Gemini API key: ")
+  user_key <- readline()
+  
+  if (nchar(user_key) < 10) {
+    cat("❌ The entered key is too short to be valid.\n")
+    return(NULL)
+  }
+  
+  # Test the key
+  if (validate_api_key(user_key)) {
+    # Save to config file
+    config_file <- file.path(Sys.getenv("HOME"), ".gemini_config")
+    dir.create(dirname(config_file), recursive = TRUE, showWarnings = FALSE)
+    writeLines(c("# Google Gemini API key", user_key), config_file)
+    Sys.chmod(config_file, mode = "0600")  # Secure permissions
+    cat("✅ Valid API key saved to", config_file, "\n")
+    
+    # Also set environment variable for this session
+    Sys.setenv(GEMINI_API_KEY = user_key)
+    
+    return(user_key)
+  } else {
+    cat("❌ The API key could not be validated. Please try again with a different key.\n")
+    return(NULL)
+  }
+}
+
+# Function to completely refresh API key setup
+setup_gemini_api <- function() {
+  cat("\n===== Gemini API Setup Utility =====\n")
+  
+  # Check for existing key
+  existing_key <- tryCatch({
+    get_api_key()
+  }, error = function(e) {
+    return(NULL)
+  })
+  
+  if (!is.null(existing_key) && nchar(existing_key) > 10) {
+    cat("Found existing API key. Validating...\n")
+    if (validate_api_key(existing_key)) {
+      cat("✅ Existing key is valid. Setup complete!\n")
+      return(TRUE)
+    } else {
+      cat("❌ Existing key is invalid. Let's set up a new one.\n")
+    }
+  } else {
+    cat("No existing API key found. Let's set one up.\n")
+  }
+  
+  # Try to get a new key from the user
+  new_key <- get_and_test_new_key()
+  return(!is.null(new_key))
+}
+
 #' Enhanced Gemini API function with rate limiting, retries, and improved logging
 #' 
 #' @param term The trigger term to analyze
@@ -129,87 +331,27 @@ gemini_api_function <- function(term, context, grant_title, log_file,
   }
 }
 
-#' Updated test function for troubleshooting
+# Update the original test function to use our improved validation
 test_gemini_key <- function() {
-  require(httr)
-  require(jsonlite)
+  cat("\n===== Testing Gemini API Connection =====\n")
   
-  cat("Testing Gemini API key...\n")
-  
-  # Get API key
+  # Get and validate API key
   api_key <- get_api_key()
-  cat("API key length:", nchar(api_key), "\n")
+  valid <- validate_api_key(api_key)
   
-  # Create test request body
-  test_body <- list(
-    contents = list(
-      list(
-        parts = list(
-          list(text = "Return only the word SUCCESS if you can read this.")
-        )
-      )
-    )
-  )
-  
-  # Convert to JSON
-  json_body <- jsonlite::toJSON(test_body, auto_unbox = TRUE)
-  
-  # Base URL without parameters
-  base_url <- "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-  
-  cat("Testing with httr::POST...\n")
-  
-  # Execute the HTTP request properly
-  response <- tryCatch({
-    httr::POST(
-      url = base_url,
-      query = list(key = api_key),  # Add as query parameter
-      body = json_body,
-      httr::add_headers("Content-Type" = "application/json"),
-      encode = "json"  # Use json encoding
-    )
-  }, error = function(e) {
-    cat("Error:", conditionMessage(e), "\n")
-    return(NULL)
-  })
-  
-  if (!is.null(response)) {
-    status <- httr::status_code(response)
-    cat("Response status code:", status, "\n")
+  if (!valid) {
+    # If key is invalid, try to get a new one
+    cat("Would you like to set up a new API key? (y/n): ")
+    response <- tolower(readline())
     
-    if (status == 200) {
-      cat("Success! API response received.\n")
-      
-      # Try to parse the response
-      parsed <- tryCatch({
-        httr::content(response, "parsed")
-      }, error = function(e) {
-        cat("Error parsing response:", conditionMessage(e), "\n")
-        cat("Raw response:", httr::content(response, "text"), "\n")
-        return(NULL)
-      })
-      
-      if (!is.null(parsed) && !is.null(parsed$candidates)) {
-        response_text <- parsed$candidates[[1]]$content$parts[[1]]$text
-        cat("Response text:", response_text, "\n")
-        return(TRUE)
-      } else {
-        cat("Unexpected response structure\n")
-        cat("Raw response:", httr::content(response, "text"), "\n")
-        return(FALSE)
-      }
+    if (startsWith(response, "y")) {
+      return(setup_gemini_api())
     } else {
-      cat("Failed with status code:", status, "\n")
-      cat("Response body:", httr::content(response, "text"), "\n")
+      cat("Skipping setup. Test failed.\n")
       return(FALSE)
     }
-  } else {
-    cat("Failed: No response from API\n")
-    return(FALSE)
   }
-}
-
-# Test the fixed function directly if run as script
-if (!interactive()) {
-  test_gemini_key()
+  
+  # If we got here, the key is valid
+  return(TRUE)
 }
