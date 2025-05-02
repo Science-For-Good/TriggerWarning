@@ -51,7 +51,7 @@ load_data <- function() {
     )
   
   # Load and process NSF grants
-  nsf_grants <- read_csv("data/nsf_terminations_airtable_20250425.csv", show_col_types = FALSE) %>%
+  nsf_grants <- read_csv("data/nsf_terminations_airtable_20250427.csv", show_col_types = FALSE) %>%
     mutate(
       combined_text = paste(project_title, abstract, sep = " "),
       combined_text = tolower(combined_text),

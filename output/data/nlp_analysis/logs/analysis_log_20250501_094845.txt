@@ -1,0 +1,47 @@
+[2025-05-01 09:48:45][INFO] Loading existing progress file 
+[2025-05-01 09:48:45][INFO] Loaded progress file with 197 terms 
+[2025-05-01 09:48:45][INFO] 154 terms pending analysis 
+[2025-05-01 09:48:45][INFO] Processing batch 1 of 16 : culturally responsive, dei, deia, deiab, deij, disabilities, disability, discriminated, discrimination, discriminatory 
+[2025-05-01 09:48:45][INFO] Extracting contexts for term: culturally responsive 
+[2025-05-01 09:48:45][INFO] Extracted 17 valid contexts for term: culturally responsive 
+[2025-05-01 09:48:45][INFO] Processing 17 contexts for term: culturally responsive 
+[2025-05-01 09:48:45][INFO] API key length: 58 
+[2025-05-01 09:48:45][INFO] API Request for term 'culturally responsive' starting. 
+[2025-05-01 09:48:45][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-05-01 09:48:45][INFO] Retry attempt 2, waiting 2.2 seconds. 
+[2025-05-01 09:48:48][INFO] API call failed with status 403 on attempt 2: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-05-01 09:48:48][INFO] Retry attempt 3, waiting 3.6 seconds. 
+[2025-05-01 09:48:51][INFO] API call failed with status 403 on attempt 3: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-05-01 09:48:51][INFO] All retry attempts failed for term 'culturally responsive' 
+[2025-05-01 09:48:52][INFO] API key length: 58 
+[2025-05-01 09:48:52][INFO] API Request for term 'culturally responsive' starting. 
+[2025-05-01 09:48:52][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-05-01 09:48:52][INFO] Retry attempt 2, waiting 1.8 seconds. 

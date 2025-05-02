@@ -1,0 +1,691 @@
+[2025-04-30 16:23:01][INFO] Creating new progress tracking file 
+[2025-04-30 16:23:01][INFO] 197 terms pending analysis 
+[2025-04-30 16:23:01][INFO] Processing batch 1 of 20 : accessible, activism, activists, advocacy, advocate, advocates, affirming care, all-inclusive, allyship, anti-racism 
+[2025-04-30 16:23:01][INFO] Extracting contexts for term: accessible 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][INFO] Extracted 0 valid contexts for term: accessible 
+[2025-04-30 16:23:01][INFO] Extracting contexts for term: activism 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:01][INFO] Extracted 0 valid contexts for term: activism 
+[2025-04-30 16:23:01][INFO] Extracting contexts for term: activists 
+[2025-04-30 16:23:01][INFO] Extracted 1 valid contexts for term: activists 
+[2025-04-30 16:23:01][INFO] Processing 1 contexts for term: activists 
+[2025-04-30 16:23:01][INFO] API Request for term 'activists' starting. 
+[2025-04-30 16:23:01][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:23:01][INFO] Retry attempt 2, waiting 2.1 seconds. 
+[2025-04-30 16:23:03][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:23:03][INFO] Retry attempt 3, waiting 3.6 seconds. 
+[2025-04-30 16:23:06][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:23:06][INFO] All retry attempts failed for term 'activists' 
+[2025-04-30 16:23:06][INFO]   Processed 1 of 1 contexts for term: activists 
+[2025-04-30 16:23:06][INFO] Saved results for term: activists 
+[2025-04-30 16:23:06][INFO] Extracting contexts for term: advocacy 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][INFO] Extracted 0 valid contexts for term: advocacy 
+[2025-04-30 16:23:06][INFO] Extracting contexts for term: advocate 
+[2025-04-30 16:23:06][INFO] Sampling 50 contexts from 58 for term: advocate 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][INFO] Extracted 0 valid contexts for term: advocate 
+[2025-04-30 16:23:06][INFO] Extracting contexts for term: advocates 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:06][INFO] Extracted 0 valid contexts for term: advocates 
+[2025-04-30 16:23:06][INFO] Extracting contexts for term: affirming care 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][INFO] Extracted 0 valid contexts for term: affirming care 
+[2025-04-30 16:23:07][INFO] Extracting contexts for term: all-inclusive 
+[2025-04-30 16:23:07][WARNING] No contexts found for term: all-inclusive 
+[2025-04-30 16:23:07][INFO] Extracting contexts for term: allyship 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][INFO] Extracted 0 valid contexts for term: allyship 
+[2025-04-30 16:23:07][INFO] Extracting contexts for term: anti-racism 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:23:07][INFO] Extracted 0 valid contexts for term: anti-racism 
+[2025-04-30 16:23:07][INFO] Batch 1 completed. Cooling down for 60 seconds before next batch. 
+[2025-04-30 16:23:07][INFO] Progress so far: 10 completed, 0 in progress, 187 pending 
+[2025-04-30 16:24:07][INFO] Processing batch 2 of 20 : antiracist, assigned at birth, assigned female at birth, assigned male at birth, at risk, barrier, barriers, belong, bias, biased 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: antiracist 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: antiracist 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: assigned at birth 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: assigned at birth 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: assigned female at birth 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: assigned female at birth 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: assigned male at birth 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: assigned male at birth 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: at risk 
+[2025-04-30 16:24:07][INFO] Sampling 50 contexts from 80 for term: at risk 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: at risk 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: barrier 
+[2025-04-30 16:24:07][INFO] Sampling 50 contexts from 287 for term: barrier 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: barrier 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: barriers 
+[2025-04-30 16:24:07][INFO] Sampling 50 contexts from 255 for term: barriers 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: barriers 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: belong 
+[2025-04-30 16:24:07][INFO] Sampling 50 contexts from 85 for term: belong 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: belong 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: bias 
+[2025-04-30 16:24:07][INFO] Sampling 50 contexts from 98 for term: bias 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: bias 
+[2025-04-30 16:24:07][INFO] Extracting contexts for term: biased 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:24:07][INFO] Extracted 0 valid contexts for term: biased 
+[2025-04-30 16:24:07][INFO] Batch 2 completed. Cooling down for 60 seconds before next batch. 
+[2025-04-30 16:24:07][INFO] Progress so far: 20 completed, 0 in progress, 177 pending 
+[2025-04-30 16:25:07][INFO] Processing batch 3 of 20 : biased toward, biases, biases towards, biologically female, biologically male, bipoc, black, breastfeed + people, breastfeed + person, chestfeed + people 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: biased toward 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][INFO] Extracted 0 valid contexts for term: biased toward 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: biases 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][INFO] Extracted 0 valid contexts for term: biases 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: biases towards 
+[2025-04-30 16:25:07][WARNING] No contexts found for term: biases towards 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: biologically female 
+[2025-04-30 16:25:07][WARNING] No contexts found for term: biologically female 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: biologically male 
+[2025-04-30 16:25:07][WARNING] No contexts found for term: biologically male 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: bipoc 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][INFO] Extracted 0 valid contexts for term: bipoc 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: black 
+[2025-04-30 16:25:07][INFO] Sampling 50 contexts from 356 for term: black 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][ERROR] Error extracting context: the condition has length > 1 
+[2025-04-30 16:25:07][INFO] Extracted 0 valid contexts for term: black 
+[2025-04-30 16:25:07][INFO] Extracting contexts for term: breastfeed + people 
+[2025-04-30 16:25:08][WARNING] No contexts found for term: breastfeed + people 
+[2025-04-30 16:25:08][INFO] Extracting contexts for term: breastfeed + person 
+[2025-04-30 16:25:08][WARNING] No contexts found for term: breastfeed + person 
+[2025-04-30 16:25:08][INFO] Extracting contexts for term: chestfeed + people 
+[2025-04-30 16:25:08][WARNING] No contexts found for term: chestfeed + people 
+[2025-04-30 16:25:08][INFO] Batch 3 completed. Cooling down for 60 seconds before next batch. 
+[2025-04-30 16:25:08][INFO] Progress so far: 30 completed, 0 in progress, 167 pending 

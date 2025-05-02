@@ -1,0 +1,45 @@
+[2025-04-30 16:36:20][INFO] Loading existing progress file 
+[2025-04-30 16:36:20][INFO] Loaded progress file with 197 terms 
+[2025-04-30 16:36:20][INFO] 156 terms pending analysis 
+[2025-04-30 16:36:20][INFO] Processing batch 1 of 16 : cultural sensitivity, culturally appropriate, culturally responsive, dei, deia, deiab, deij, disabilities, disability, discriminated 
+[2025-04-30 16:36:20][INFO] Extracting contexts for term: cultural sensitivity 
+[2025-04-30 16:36:20][INFO] Extracted 8 valid contexts for term: cultural sensitivity 
+[2025-04-30 16:36:20][INFO] Processing 8 contexts for term: cultural sensitivity 
+[2025-04-30 16:36:20][INFO] API Request for term 'cultural sensitivity' starting. 
+[2025-04-30 16:36:20][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:36:20][INFO] Retry attempt 2, waiting 2.2 seconds. 
+[2025-04-30 16:36:23][INFO] API call failed with status 403 on attempt 2: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:36:23][INFO] Retry attempt 3, waiting 3.9 seconds. 
+[2025-04-30 16:36:27][INFO] API call failed with status 403 on attempt 3: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:36:27][INFO] All retry attempts failed for term 'cultural sensitivity' 
+[2025-04-30 16:36:27][INFO] API Request for term 'cultural sensitivity' starting. 
+[2025-04-30 16:36:27][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:36:27][INFO] Retry attempt 2, waiting 1.9 seconds. 

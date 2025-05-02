@@ -1,0 +1,106 @@
+[2025-04-30 16:31:40][INFO] Loading existing progress file 
+[2025-04-30 16:31:40][INFO] Loaded progress file with 197 terms 
+[2025-04-30 16:31:40][INFO] 158 terms pending analysis 
+[2025-04-30 16:31:40][INFO] Processing batch 1 of 16 : cultural differences, cultural heritage, cultural sensitivity, culturally appropriate, culturally responsive, dei, deia, deiab, deij, disabilities 
+[2025-04-30 16:31:40][INFO] Extracting contexts for term: cultural differences 
+[2025-04-30 16:31:40][INFO] Extracted 2 valid contexts for term: cultural differences 
+[2025-04-30 16:31:40][INFO] Processing 2 contexts for term: cultural differences 
+[2025-04-30 16:31:40][INFO] API Request for term 'cultural differences' starting. 
+[2025-04-30 16:31:40][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:40][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:31:42][INFO] API call failed with status 403 on attempt 2: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:42][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-04-30 16:31:46][INFO] API call failed with status 403 on attempt 3: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:46][INFO] All retry attempts failed for term 'cultural differences' 
+[2025-04-30 16:31:47][INFO] API Request for term 'cultural differences' starting. 
+[2025-04-30 16:31:47][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:47][INFO] Retry attempt 2, waiting 1.8 seconds. 
+[2025-04-30 16:31:49][INFO] API call failed with status 403 on attempt 2: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:49][INFO] Retry attempt 3, waiting 4.3 seconds. 
+[2025-04-30 16:31:53][INFO] API call failed with status 403 on attempt 3: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:53][INFO] All retry attempts failed for term 'cultural differences' 
+[2025-04-30 16:31:53][INFO]   Processed 2 of 2 contexts for term: cultural differences 
+[2025-04-30 16:31:53][INFO] Saved results for term: cultural differences 
+[2025-04-30 16:31:53][INFO] Extracting contexts for term: cultural heritage 
+[2025-04-30 16:31:53][INFO] Extracted 5 valid contexts for term: cultural heritage 
+[2025-04-30 16:31:53][INFO] Processing 5 contexts for term: cultural heritage 
+[2025-04-30 16:31:53][INFO] API Request for term 'cultural heritage' starting. 
+[2025-04-30 16:31:54][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:54][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:31:56][INFO] API call failed with status 403 on attempt 2: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:31:56][INFO] Retry attempt 3, waiting 4.2 seconds. 
+[2025-04-30 16:32:00][INFO] API call failed with status 403 on attempt 3: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:32:00][INFO] All retry attempts failed for term 'cultural heritage' 
+[2025-04-30 16:32:01][INFO] API Request for term 'cultural heritage' starting. 
+[2025-04-30 16:32:01][INFO] API call failed with status 403 on attempt 1: {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+ 
+[2025-04-30 16:32:01][INFO] Retry attempt 2, waiting 2.1 seconds. 

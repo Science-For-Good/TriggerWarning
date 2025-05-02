@@ -1,0 +1,57 @@
+[2025-05-02 15:14:02][INFO] Loading existing progress file 
+[2025-05-02 15:14:02][INFO] Loaded progress file with 197 terms 
+[2025-05-02 15:14:02][INFO] 148 terms pending analysis 
+[2025-05-02 15:14:02][INFO] Processing batch 1 of 15 : disability, discriminated, discrimination, discriminatory, disparity, diverse, diverse backgrounds, diverse communities, diverse community, diverse group 
+[2025-05-02 15:14:02][INFO] Extracting contexts for term: disability 
+[2025-05-02 15:14:02][INFO] Sampling 50 contexts from 52 for term: disability 
+[2025-05-02 15:14:02][INFO] Extracted 50 valid contexts for term: disability 
+[2025-05-02 15:14:02][INFO] Processing 50 contexts for term: disability 
+[2025-05-02 15:14:02][INFO] Using API key (length: 58) 
+[2025-05-02 15:14:02][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:02][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:02][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-05-02 15:14:04][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:04][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:04][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-05-02 15:14:08][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:08][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:08][INFO] Using API key (length: 58) 
+[2025-05-02 15:14:08][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:08][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:08][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-05-02 15:14:10][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:10][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:10][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-05-02 15:14:15][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:15][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:15][INFO] Using API key (length: 58) 
+[2025-05-02 15:14:15][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:15][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:15][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-05-02 15:14:17][INFO] Error parsing API response: parse error: premature EOF
+                                       
+                     (right here) ------^
+ 
+[2025-05-02 15:14:17][INFO] API call failed to return valid JSON:  
+[2025-05-02 15:14:17][INFO] Retry attempt 3, waiting 4 seconds. 

@@ -1,0 +1,33 @@
+[2025-05-02 15:24:21][INFO] Loading existing progress file 
+[2025-05-02 15:24:21][INFO] Loaded progress file with 197 terms 
+[2025-05-02 15:24:21][INFO] 143 terms pending analysis 
+[2025-05-02 15:24:21][INFO] Processing batch 1 of 15 : diverse, diverse backgrounds, diverse communities, diverse community, diverse group, diverse groups, diversified, diversify, diversifying, diversity 
+[2025-05-02 15:24:21][INFO] Extracting contexts for term: diverse 
+[2025-05-02 15:24:21][INFO] Sampling 50 contexts from 450 for term: diverse 
+[2025-05-02 15:24:21][INFO] Extracted 50 valid contexts for term: diverse 
+[2025-05-02 15:24:21][INFO] Processing 50 contexts for term: diverse 
+[2025-05-02 15:24:21][INFO] Using API key (length: 39) 
+[2025-05-02 15:24:21][INFO] API call failed with status 400: {
+  "error": {
+    "code": 400,
+    "message": "API key expired. Please renew the API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key expired. Please renew the API key."
+      }
+    ]
+  }
+}
+ 
+[2025-05-02 15:24:21][INFO] Retry attempt 2, waiting 2 seconds. 

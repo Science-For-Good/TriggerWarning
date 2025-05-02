@@ -1,0 +1,119 @@
+[2025-04-30 16:28:47][INFO] Loading existing progress file 
+[2025-04-30 16:28:47][INFO] Loaded progress file with 197 terms 
+[2025-04-30 16:28:47][INFO] 164 terms pending analysis 
+[2025-04-30 16:28:47][INFO] Processing batch 1 of 17 : climate science, commercial sex worker, community diversity, community equity, confirmation bias, cultural competence, cultural differences, cultural heritage, cultural sensitivity, culturally appropriate 
+[2025-04-30 16:28:47][INFO] Extracting contexts for term: climate science 
+[2025-04-30 16:28:47][INFO] Extracted 11 valid contexts for term: climate science 
+[2025-04-30 16:28:47][INFO] Processing 11 contexts for term: climate science 
+[2025-04-30 16:28:47][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:28:47][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:28:47][INFO] Retry attempt 2, waiting 1.8 seconds. 
+[2025-04-30 16:28:49][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:28:49][INFO] Retry attempt 3, waiting 4.1 seconds. 
+[2025-04-30 16:28:53][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:28:53][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:28:54][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:28:54][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:28:54][INFO] Retry attempt 2, waiting 2.2 seconds. 
+[2025-04-30 16:28:56][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:28:56][INFO] Retry attempt 3, waiting 4.1 seconds. 
+[2025-04-30 16:29:00][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:00][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:00][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:00][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:00][INFO] Retry attempt 2, waiting 1.8 seconds. 
+[2025-04-30 16:29:02][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:02][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-04-30 16:29:06][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:06][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:06][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:06][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:06][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:29:08][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:08][INFO] Retry attempt 3, waiting 3.8 seconds. 
+[2025-04-30 16:29:12][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:12][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:13][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:13][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:13][INFO] Retry attempt 2, waiting 1.9 seconds. 
+[2025-04-30 16:29:14][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:15][INFO] Retry attempt 3, waiting 4.1 seconds. 
+[2025-04-30 16:29:19][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:19][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:19][INFO]   Processed 5 of 11 contexts for term: climate science 
+[2025-04-30 16:29:19][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:19][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:19][INFO] Retry attempt 2, waiting 2.2 seconds. 
+[2025-04-30 16:29:21][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:21][INFO] Retry attempt 3, waiting 3.6 seconds. 
+[2025-04-30 16:29:25][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:25][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:25][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:25][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:25][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:29:27][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:27][INFO] Retry attempt 3, waiting 3.8 seconds. 
+[2025-04-30 16:29:31][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:31][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:32][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:32][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:32][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:29:34][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:34][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-04-30 16:29:38][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:38][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:38][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:38][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:38][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-04-30 16:29:40][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:40][INFO] Retry attempt 3, waiting 4 seconds. 
+[2025-04-30 16:29:44][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:44][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:44][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:44][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:44][INFO] Retry attempt 2, waiting 1.8 seconds. 
+[2025-04-30 16:29:46][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:46][INFO] Retry attempt 3, waiting 4.4 seconds. 
+[2025-04-30 16:29:51][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:51][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:51][INFO]   Processed 10 of 11 contexts for term: climate science 
+[2025-04-30 16:29:51][INFO] API Request for term 'climate science' starting. 
+[2025-04-30 16:29:51][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:51][INFO] Retry attempt 2, waiting 1.9 seconds. 
+[2025-04-30 16:29:53][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:53][INFO] Retry attempt 3, waiting 3.8 seconds. 
+[2025-04-30 16:29:57][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:57][INFO] All retry attempts failed for term 'climate science' 
+[2025-04-30 16:29:57][INFO]   Processed 11 of 11 contexts for term: climate science 
+[2025-04-30 16:29:57][INFO] Saved results for term: climate science 
+[2025-04-30 16:29:57][INFO] Extracting contexts for term: commercial sex worker 
+[2025-04-30 16:29:57][WARNING] No contexts found for term: commercial sex worker 
+[2025-04-30 16:29:57][INFO] Extracting contexts for term: community diversity 
+[2025-04-30 16:29:57][WARNING] No contexts found for term: community diversity 
+[2025-04-30 16:29:57][INFO] Extracting contexts for term: community equity 
+[2025-04-30 16:29:57][INFO] Extracted 1 valid contexts for term: community equity 
+[2025-04-30 16:29:57][INFO] Processing 1 contexts for term: community equity 
+[2025-04-30 16:29:57][INFO] API Request for term 'community equity' starting. 
+[2025-04-30 16:29:57][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:57][INFO] Retry attempt 2, waiting 2.2 seconds. 
+[2025-04-30 16:29:59][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:29:59][INFO] Retry attempt 3, waiting 3.9 seconds. 
+[2025-04-30 16:30:03][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:30:03][INFO] All retry attempts failed for term 'community equity' 
+[2025-04-30 16:30:03][INFO]   Processed 1 of 1 contexts for term: community equity 
+[2025-04-30 16:30:03][INFO] Saved results for term: community equity 
+[2025-04-30 16:30:03][INFO] Extracting contexts for term: confirmation bias 
+[2025-04-30 16:30:03][WARNING] No contexts found for term: confirmation bias 
+[2025-04-30 16:30:03][INFO] Extracting contexts for term: cultural competence 
+[2025-04-30 16:30:03][INFO] Extracted 13 valid contexts for term: cultural competence 
+[2025-04-30 16:30:03][INFO] Processing 13 contexts for term: cultural competence 
+[2025-04-30 16:30:03][INFO] API Request for term 'cultural competence' starting. 
+[2025-04-30 16:30:03][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:30:03][INFO] Retry attempt 2, waiting 1.9 seconds. 
+[2025-04-30 16:30:05][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:30:05][INFO] Retry attempt 3, waiting 3.6 seconds. 
+[2025-04-30 16:30:09][INFO] API call error on attempt 3: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:30:09][INFO] All retry attempts failed for term 'cultural competence' 
+[2025-04-30 16:30:09][INFO] API Request for term 'cultural competence' starting. 
+[2025-04-30 16:30:09][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-04-30 16:30:09][INFO] Retry attempt 2, waiting 1.9 seconds. 

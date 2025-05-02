@@ -1,0 +1,15 @@
+[2025-05-02 15:16:18][INFO] Loading existing progress file 
+[2025-05-02 15:16:18][INFO] Loaded progress file with 197 terms 
+[2025-05-02 15:16:18][INFO] 147 terms pending analysis 
+[2025-05-02 15:16:18][INFO] Processing batch 1 of 15 : discriminated, discrimination, discriminatory, disparity, diverse, diverse backgrounds, diverse communities, diverse community, diverse group, diverse groups 
+[2025-05-02 15:16:18][INFO] Extracting contexts for term: discriminated 
+[2025-05-02 15:16:18][WARNING] No contexts found for term: discriminated 
+[2025-05-02 15:16:18][INFO] Extracting contexts for term: discrimination 
+[2025-05-02 15:16:18][INFO] Sampling 50 contexts from 230 for term: discrimination 
+[2025-05-02 15:16:18][INFO] Extracted 50 valid contexts for term: discrimination 
+[2025-05-02 15:16:18][INFO] Processing 50 contexts for term: discrimination 
+[2025-05-02 15:16:18][INFO] Using API key (length: 58) 
+[2025-05-02 15:16:18][INFO] API call error on attempt 1: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-05-02 15:16:18][INFO] Retry attempt 2, waiting 2 seconds. 
+[2025-05-02 15:16:20][INFO] API call error on attempt 2: URL using bad/illegal format or missing URL: URL rejected: Malformed input to a URL function 
+[2025-05-02 15:16:20][INFO] Retry attempt 3, waiting 4 seconds. 
