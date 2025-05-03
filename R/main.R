@@ -240,7 +240,9 @@ cat("\nCreating grant type visualizations...\n")
 grant_type_dir <- file.path(figures_dir, "grant_types")
 dir.create(grant_type_dir, recursive = TRUE, showWarnings = FALSE)
 
-grant_type_plot <- create_grant_type_plot(nih_grants)
+grant_type_plot <- create_grant_type_plot(nih_grants) |> 
+  add_angled_x_labels()
+
 save_plot("nih_grant_types", grant_type_plot, width = 10, height = 6, output_dir = grant_type_dir)
 
 activity_code_plot <- create_activity_code_plot(nih_grants)
