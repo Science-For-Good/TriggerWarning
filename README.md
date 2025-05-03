@@ -1,4 +1,4 @@
-![](assets/images/sfg_full_teal.png)
+![science for good](assets/images/sfg_full_teal.png)
 
 # TriggerWarning: Analysis of Terminated Federal Research Grants
 
