@@ -1,5 +1,3 @@
-![science for good](assets/images/sfg_full_teal.png)
-
 # TriggerWarning: Analysis of Terminated Federal Research Grants
 
 A comprehensive analysis of recently terminated NIH and NSF grants containing specific "trigger terms" to determine how frequently these terms appear in specialized technical scientific contexts versus interdisciplinary social scientific contexts.
