@@ -1,19 +1,20 @@
-# nlp_visualizations.R - Simplified version that focuses on summary data
-# This version avoids the complex joining operations that were causing errors
+# nlp_visualizations.R
 
 library(tidyverse)
 library(ggplot2)
 library(RColorBrewer)
 
-# 1. Create a heatmap of term classifications
+# Create a heatmap of term classifications
 create_term_classification_heatmap <- function(nlp_summary, top_n = 20) {
   # Ensure we have the required data
   if (!"classification" %in% names(nlp_summary)) {
     stop("NLP summary data must contain a 'classification' column")
   }
   
-  # Prepare data for heatmap
+  # Prepare data for heatmap - standardize classification names first
+  # This is the key change - standardize classification names
   heatmap_data <- nlp_summary %>%
+    mutate(classification = toupper(classification)) %>%
     group_by(term) %>%
     mutate(total_count = sum(count)) %>%
     ungroup() %>%
@@ -22,22 +23,36 @@ create_term_classification_heatmap <- function(nlp_summary, top_n = 20) {
     # Select top terms by total count
     arrange(desc(total_count)) %>%
     filter(term %in% unique(term)[1:min(top_n, length(unique(term)))]) %>%
-    # Pivot to wide format for processing
+    # Ensure classifications are standardized
+    mutate(classification = case_when(
+      toupper(classification) %in% c("OFF-TARGET", "SCIENTIFIC") ~ "OFF-TARGET",
+      toupper(classification) %in% c("ON-TARGET", "POLITICAL") ~ "ON-TARGET",
+      toupper(classification) %in% c("AMBIGUOUS") ~ "AMBIGUOUS",
+      TRUE ~ toupper(classification)
+    ))
+  
+  # Get unique classifications for pivoting
+  unique_classifications <- unique(heatmap_data$classification)
+  
+  # Do the pivot operations with dynamic column names
+  wide_data <- heatmap_data %>%
     pivot_wider(
       id_cols = term,
       names_from = classification,
       values_from = percentage,
       values_fill = 0
-    ) %>%
-    # Convert back to long for ggplot
+    )
+  
+  # Convert back to long for ggplot
+  long_data <- wide_data %>%
     pivot_longer(
-      cols = c("SCIENTIFIC", "POLITICAL", "AMBIGUOUS"),
+      cols = -term,
       names_to = "classification",
       values_to = "percentage"
     )
   
   # Create the heatmap
-  heatmap_plot <- ggplot(heatmap_data, aes(x = classification, y = reorder(term, percentage), fill = percentage)) +
+  heatmap_plot <- ggplot(long_data, aes(x = classification, y = reorder(term, percentage), fill = percentage)) +
     geom_tile(color = "white") +
     scale_fill_gradient(low = "#5EECC2", high = "#FF7400", name = "Percentage") +
     geom_text(aes(label = round(percentage, 1)), color = "white", size = 3, fontface = "bold") +
@@ -58,7 +73,7 @@ create_term_classification_heatmap <- function(nlp_summary, top_n = 20) {
   return(heatmap_plot)
 }
 
-# 2. Create a faceted bar chart showing top terms by classification
+# Create a faceted bar chart showing top terms by classification
 create_top_terms_by_classification <- function(nlp_summary, top_n = 5) {
   # Get top terms for each classification
   top_terms <- nlp_summary %>%
@@ -90,9 +105,9 @@ create_top_terms_by_classification <- function(nlp_summary, top_n = 5) {
   return(terms_plot)
 }
 
-# 3. Create a scientific classification rate chart (false positive rates)
+# Create a off-target classification rate chart (false positive rates)
 create_scientific_rate_chart <- function(nlp_summary, top_n = 20) {
-  # Calculate scientific classification rates
+  # Calculate off-target classification rates
   sci_rates <- nlp_summary %>%
     group_by(term) %>%
     mutate(
@@ -114,16 +129,16 @@ create_scientific_rate_chart <- function(nlp_summary, top_n = 20) {
       plot.subtitle = element_text(size = 14)
     ) +
     labs(
-      title = paste("Top", top_n, "Terms with Highest Scientific Classification Rates"),
-      subtitle = "Percentage of contexts classified as scientific/technical",
+      title = paste("Top", top_n, "Terms with Highest Off-Target Classification Rates"),
+      subtitle = "Percentage of contexts classified as off-target",
       x = NULL,
-      y = "Scientific Classification Rate (%)"
+      y = "Off-Target Classification Rate (%)"
     )
   
   return(sci_plot)
 }
 
-# 4. Create a political classification rate chart
+# Create a political classification rate chart
 create_political_rate_chart <- function(nlp_summary, top_n = 20) {
   # Calculate political classification rates
   pol_rates <- nlp_summary %>%
@@ -147,16 +162,16 @@ create_political_rate_chart <- function(nlp_summary, top_n = 20) {
       plot.subtitle = element_text(size = 14)
     ) +
     labs(
-      title = paste("Top", top_n, "Terms with Highest Political Classification Rates"),
+      title = paste("Top", top_n, "Terms with Highest On-Target Classification Rates"),
       subtitle = "Percentage of contexts classified as political/social",
       x = NULL,
-      y = "Political Classification Rate (%)"
+      y = "On-Target Rate (%)"
     )
   
   return(pol_plot)
 }
 
-# 5. Create a stacked bar chart showing overall classification distribution
+# Create a stacked bar chart showing overall classification distribution
 create_classification_distribution <- function(nlp_summary) {
   # Summarize classifications
   class_summary <- nlp_summary %>%
@@ -210,7 +225,7 @@ create_nlp_visualizations <- function(nlp_results_dir, output_dir) {
   # List to store all generated plots
   plots_list <- list()
   
-  # 1. Generate term classification heatmap
+  # Generate term classification heatmap
   cat("Creating term classification heatmap...\n")
   heatmap_plot <- create_term_classification_heatmap(nlp_summary, top_n = 20)
   # Save both PNG and PDF
@@ -218,7 +233,7 @@ create_nlp_visualizations <- function(nlp_results_dir, output_dir) {
   ggsave(file.path(output_dir, "term_classification_heatmap.pdf"), heatmap_plot, width = 12, height = 10)
   plots_list$heatmap_plot <- heatmap_plot
   
-  # 2. Generate top terms by classification
+  # Generate top terms by classification
   cat("Creating top terms by classification chart...\n")
   top_terms_plot <- create_top_terms_by_classification(nlp_summary, top_n = 5)
   # Save both PNG and PDF
@@ -226,7 +241,7 @@ create_nlp_visualizations <- function(nlp_results_dir, output_dir) {
   ggsave(file.path(output_dir, "top_terms_by_classification.pdf"), top_terms_plot, width = 12, height = 8)
   plots_list$top_terms_plot <- top_terms_plot
   
-  # 3. Generate scientific rate chart
+  # Generate scientific rate chart
   cat("Creating scientific classification rate chart...\n")
   sci_plot <- create_scientific_rate_chart(nlp_summary, top_n = 20)
   # Save both PNG and PDF
@@ -234,7 +249,7 @@ create_nlp_visualizations <- function(nlp_results_dir, output_dir) {
   ggsave(file.path(output_dir, "scientific_classification_rates.pdf"), sci_plot, width = 12, height = 10)
   plots_list$sci_plot <- sci_plot
   
-  # 4. Generate political rate chart
+  # Generate political rate chart
   cat("Creating political classification rate chart...\n")
   pol_plot <- create_political_rate_chart(nlp_summary, top_n = 20)
   # Save both PNG and PDF
@@ -242,7 +257,7 @@ create_nlp_visualizations <- function(nlp_results_dir, output_dir) {
   ggsave(file.path(output_dir, "political_classification_rates.pdf"), pol_plot, width = 12, height = 10)
   plots_list$pol_plot <- pol_plot
   
-  # 5. Generate overall distribution pie chart
+  # Generate overall distribution pie chart
   cat("Creating overall classification distribution chart...\n")
   pie_chart <- create_classification_distribution(nlp_summary)
   # Save both PNG and PDF

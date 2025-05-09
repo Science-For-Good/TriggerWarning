@@ -3,21 +3,21 @@
 # Create visualization of NIH institutes
 create_nih_institute_plot <- function(nih_grants) {
   # Count by institute
-  institute_counts <- nih_grants %>%
-    filter(!is.na(institute)) %>%
-    group_by(institute) %>%
+  institute_counts <- nih_grants |>
+    filter(!is.na(institute)) |>
+    group_by(institute) |>
     summarize(
       terminations = n(),
       with_terms = sum(has_trigger_term, na.rm = TRUE),
       percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
       .groups = "drop"
-    ) %>%
-    arrange(desc(terminations)) %>%
+    ) |>
+    arrange(desc(terminations)) |>
     # Limit to top institutes to avoid crowding
     head(10)
   
   # Create visualization with angled x-axis labels
-  institute_plot <- ggplot(institute_counts %>% 
+  institute_plot <- ggplot(institute_counts |> 
                              mutate(institute = reorder(institute, terminations)), 
                            aes(x = institute, y = terminations, fill = percent_with_terms)) +
     geom_col() +
@@ -113,19 +113,19 @@ create_nih_term_distribution_plot <- function(nih_grants, all_term_counts) {
 # Create NSF directorate visualizations
 create_nsf_directorate_plot <- function(nsf_grants) {
   # Count by directorate
-  directorate_counts <- nsf_grants %>%
-    filter(!is.na(directorate)) %>%
-    group_by(directorate) %>%
+  directorate_counts <- nsf_grants |>
+    filter(!is.na(directorate)) |>
+    group_by(directorate) |>
     summarize(
       terminations = n(),
       with_terms = sum(has_trigger_term, na.rm = TRUE),
       percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
       .groups = "drop"
-    ) %>%
+    ) |>
     arrange(desc(terminations))
   
   # Create visualization with angled labels
-  directorate_plot <- ggplot(directorate_counts %>% 
+  directorate_plot <- ggplot(directorate_counts |> 
                                mutate(directorate = reorder(directorate, terminations)), 
                              aes(x = directorate, y = terminations, fill = percent_with_terms)) +
     geom_col() +

@@ -38,12 +38,13 @@ source("R/data/data_processing.R")
 
 # Visualization scripts
 source("R/visualization/agency_visualizations.R")
-source("R/visualization/term_analysis.R")
+source("R/visualization/term_analysis.R") 
 source("R/visualization/regional_visualizations.R")
 source("R/visualization/time_visualizations.R")
 source("R/visualization/congressional_district_visualizations.R")
 source("R/visualization/institution_visualizations.R")
 source("R/visualization/grant_type_visualizations.R")
+source("R/visualization/nlp_visualizations.R")
 
 # NLP integration
 source("R/analysis/nlp_integration.R")
@@ -102,9 +103,8 @@ source("R/analysis/gemini_api_integration.R")
 cat("Loading and processing data...\n")
 data_list <- load_data(
   trigger_terms_path = file.path(data_dir, "triggerterms.csv"),
-  nih_taggs_path = file.path(data_dir, "Terminated_Grants_Explorer_TAGGS.csv"),
-  nih_airtable_path = file.path(data_dir, "nih_terminations_airtable_20250429.csv"),
-  nsf_grants_path = file.path(data_dir, "nsf_terminations_airtable_20250425.csv")
+  nih_airtable_path = file.path(data_dir, "nih_terminations_airtable_20250508.csv"),
+  nsf_grants_path = file.path(data_dir, "nsf_terminations_airtable_20250508.csv")
 )
 
 # Extract datasets
@@ -131,53 +131,112 @@ cat("NSF grants with trigger terms:", sum(nsf_grants$has_trigger_term, na.rm = T
 cat("\nCreating time-related visualizations...\n")
 time_dir <- file.path(figures_dir, "time")
 
-# Annual terminations plot
-annual_plot <- create_annual_terminations_plot(all_grants)
-save_plot("terminations_by_year", annual_plot, width = 12, height = 7, output_dir = time_dir)
-
-# Administration plot
-admin_plot <- create_administration_plot(all_grants)
-save_plot("terminations_by_administration", admin_plot, width = 10, height = 6, output_dir = time_dir)
+# Create daily time series
+daily_ts_plot <- create_daily_timeseries_plot(all_grants, days_to_show = 30)
+save_plot("terminations_by_day", daily_ts_plot, width = 12, height = 7, output_dir = time_dir)
 
 # Monthly plot
 month_plot <- create_monthly_plot(all_grants)
 save_plot("terminations_by_month", month_plot, width = 12, height = 7, output_dir = time_dir)
 
-# Recent terminations plot
-recent_plot <- create_recent_terminations_plot(all_grants)
-save_plot("recent_terminations", recent_plot, width = 12, height = 7, output_dir = time_dir)
-
 # Fiscal quarter plot
 quarter_plot <- create_quarterly_plot(all_grants)
 save_plot("terminations_by_quarter", quarter_plot, width = 8, height = 6, output_dir = time_dir)
-
-# Monthly term prevalence plot
-monthly_term_plot <- create_monthly_term_prevalence_plot(all_grants)
-save_plot("monthly_term_prevalence", monthly_term_plot, width = 12, height = 6, output_dir = time_dir)
-
-# Yearly term prevalence plot
-yearly_term_plot <- create_yearly_term_prevalence_plot(all_grants)
-save_plot("yearly_term_prevalence", yearly_term_plot, width = 10, height = 6, output_dir = time_dir)
 
 # Create term-related visualizations
 cat("\nCreating term-related visualizations...\n")
 terms_dir <- file.path(figures_dir, "terms")
 
-# Top terms
-top_terms_plot <- create_top_terms_plot(all_term_counts)
-save_plot("top_flagged_terms", top_terms_plot, width = 12, height = 7, output_dir = terms_dir)
+# Find the most recent NLP analysis directory with validation
+nlp_base_dir <- file.path(processed_data_dir, "nlp_analysis")
 
-# Term context donuts
-term_donuts <- create_term_context_donuts(all_grants)
-save_plot("trans_context_donut", term_donuts$trans_donut, width = 8, height = 8, output_dir = terms_dir)
-save_plot("climate_context_donut", term_donuts$climate_donut, width = 8, height = 8, output_dir = terms_dir)
-save_plot("overall_context_donut", term_donuts$overall_donut, width = 8, height = 8, output_dir = terms_dir)
+# Create the directory if it doesn't exist yet
+if (!dir.exists(nlp_base_dir)) {
+  dir.create(nlp_base_dir, recursive = TRUE, showWarnings = FALSE)
+  cat("Created NLP analysis directory:", nlp_base_dir, "\n")
+}
 
-# Save the context analysis results
-context_dir <- file.path(processed_data_dir, "context_analysis")
-write.csv(term_donuts$trans_data, file.path(context_dir, "trans_context_analysis.csv"), row.names = FALSE)
-write.csv(term_donuts$climate_data, file.path(context_dir, "climate_context_analysis.csv"), row.names = FALSE)
-write.csv(term_donuts$overall_data, file.path(context_dir, "overall_context_analysis.csv"), row.names = FALSE)
+# Find the term_classification_summary.csv file
+summary_files <- list.files(nlp_base_dir, pattern = "term_classification_summary.csv", 
+                            recursive = TRUE, full.names = TRUE)
+
+if (length(summary_files) > 0) {
+  cat("Found", length(summary_files), "summary files:\n")
+  for (file in summary_files) {
+    cat(" -", file, "\n")
+  }
+  
+  # Sort by directory name (which should be dates)
+  summary_files <- sort(summary_files, decreasing = TRUE)
+  
+  # Use the parent directory of the most recent file as nlp_dir
+  nlp_dir <- dirname(summary_files[1])
+  cat("Using NLP results from:", nlp_dir, "\n")
+  
+  # Create term context donuts using all off-target terms
+  term_donuts <- create_term_context_donuts(all_grants, nlp_results_dir = nlp_dir, num_terms = 197)
+  
+  # Save the overall donut chart
+  save_plot("overall_context_donut", term_donuts$overall_donut, width = 8, height = 8, output_dir = terms_dir)
+  
+  # Save results for each top term
+  cat("Saving visualizations for top off-target terms...\n")
+  
+  # Create a subdirectory for the individual term visualizations
+  top_terms_dir <- file.path(terms_dir, "top_off_target_terms")
+  dir.create(top_terms_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  # Save context analysis data
+  context_dir <- file.path(processed_data_dir, "context_analysis")
+  write.csv(term_donuts$overall_data, file.path(context_dir, "overall_context_analysis.csv"), row.names = FALSE)
+  
+  # Save top terms list
+  write.csv(data.frame(term = term_donuts$top_terms), 
+            file.path(context_dir, "top_off_target_terms.csv"), 
+            row.names = FALSE)
+  
+  # Process each term
+  for (term in term_donuts$top_terms) {
+    # Create safe filename from term
+    safe_term <- gsub("[^a-zA-Z0-9]", "_", term)
+    
+    # Check if visualization exists for this term
+    if (paste0(safe_term, "_donut") %in% names(term_donuts)) {
+      # Save the visualization
+      save_plot(
+        paste0(safe_term, "_context"), 
+        term_donuts[[paste0(safe_term, "_donut")]], 
+        width = 8, height = 8, 
+        output_dir = top_terms_dir
+      )
+      
+      # Save the data
+      if (paste0(safe_term, "_data") %in% names(term_donuts)) {
+        write.csv(
+          term_donuts[[paste0(safe_term, "_data")]], 
+          file.path(context_dir, paste0(safe_term, "_context_analysis.csv")),
+          row.names = FALSE
+        )
+      }
+    }
+  }
+  
+  # Create top terms frequency visualization - ONLY do this once, AFTER processing NLP results
+  top_terms_plot <- create_top_terms_plot(all_term_counts)
+  save_plot("top_flagged_terms", top_terms_plot, width = 12, height = 7, output_dir = terms_dir)
+  
+  cat("Term context visualizations complete. Saved", length(term_donuts$top_terms), "term visualizations.\n")
+} else {
+  cat("Warning: No term_classification_summary.csv files found. Term context visualizations will be skipped.\n")
+  
+  # Still create basic term frequency visualization even without NLP
+  top_terms_plot <- create_top_terms_plot(all_term_counts)
+  save_plot("top_flagged_terms", top_terms_plot, width = 12, height = 7, output_dir = terms_dir)
+}
+
+# Monthly term prevalence plot
+monthly_term_plot <- create_monthly_term_prevalence_plot(all_grants)
+save_plot("monthly_term_prevalence", monthly_term_plot, width = 12, height = 6, output_dir = time_dir)
 
 # Agency-specific visualizations
 cat("\nCreating agency-specific visualizations...\n")
@@ -310,7 +369,7 @@ if (run_nlp_analysis) {
                           show_col_types = FALSE)
   
   # Create and save additional visualizations
-  # Top false positives plot (scientific usage of politically sensitive terms)
+  # Top false positives plot (off-target)
   fp_rates <- read_csv(file.path(nlp_dirs$output_dir, "false_positive_rates.csv"), 
                        show_col_types = FALSE)
   
@@ -320,13 +379,12 @@ if (run_nlp_analysis) {
     coord_flip() +
     theme_minimal() +
     labs(title = "Top 20 Terms with Highest False Positive Rates",
-         subtitle = "Percentage of contexts classified as scientific/technical",
+         subtitle = "Percentage of contexts classified as off-target",
          x = "Term", y = "False Positive Rate (%)")
   
   save_plot("top_false_positives", top_fp_plot, width = 10, height = 8, output_dir = nlp_viz_dir)
 }
 
-source("R/visualization/nlp_visualizations.R")
 
 # After the NLP analysis is complete:
 if (run_nlp_analysis) {
@@ -338,43 +396,11 @@ if (run_nlp_analysis) {
   cat("\nGenerating comprehensive NLP visualizations...\n")
   
   # Generate visualizations using the simplified approach
-  nlp_plots <- create_nlp_visualizations(
-    nlp_results_dir = nlp_dirs$output_dir,
-    output_dir = nlp_viz_dir
-  )
-  
-  # Optionally - create a custom false positive rates visualization
-  # This is similar to what you already had in your code
-  if (exists("fp_rates") || file.exists(file.path(nlp_dirs$output_dir, "false_positive_rates.csv"))) {
-    # Load the data if needed
-    if (!exists("fp_rates")) {
-      fp_rates <- read_csv(file.path(nlp_dirs$output_dir, "false_positive_rates.csv"), 
-                           show_col_types = FALSE)
-    }
-    
-    # Create the plot
-    top_fp_plot <- ggplot(head(fp_rates, 20), 
-                          aes(x = reorder(term, false_positive_rate), y = false_positive_rate)) +
-      geom_col(fill = "#5EECC2") +
-      coord_flip() +
-      theme_minimal() +
-      theme(
-        plot.title = element_text(size = 16, face = "bold"),
-        plot.subtitle = element_text(size = 14)
-      ) +
-      labs(
-        title = "Top 20 Terms with Highest False Positive Rates",
-        subtitle = "Percentage of contexts classified as scientific/technical",
-        x = "Term", 
-        y = "False Positive Rate (%)"
-      )
-    
-    # Save using the utility function that saves both PNG and PDF
-    save_nlp_plot("top_false_positives", top_fp_plot, width = 10, height = 8, output_dir = nlp_viz_dir)
-  }
+  source("R/visualization/nlp_visualizations.R")
   
   cat("NLP visualization complete!\n")
 }
+
 
 # Final summary message
 cat("\nComprehensive analysis completed!\n")

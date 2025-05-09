@@ -2,153 +2,85 @@
 
 # Extract NIH activity code (grant type)
 extract_activity_code <- function(nih_grants) {
+  # Add debug output
+  cat("Starting extract_activity_code function\n")
+  cat("Dataset has", nrow(nih_grants), "rows\n")
+  cat("Available columns:", paste(names(nih_grants), collapse=", "), "\n")
+  
   # Check if we have the activity_code column directly
   if ("activity_code" %in% names(nih_grants)) {
+    cat("activity_code column already exists\n")
+    
     # If we already have activity_code but not grant_type, add grant_type
     if (!"grant_type" %in% names(nih_grants)) {
+      cat("Adding grant_type based on existing activity_code\n")
       nih_grants <- nih_grants |>
-        mutate(
+        dplyr::mutate(
           # Extract mechanism type (first letter)
-          grant_type = case_when(
-            str_detect(activity_code, "^R") ~ "Research Project Grants (R)",
-            str_detect(activity_code, "^K") ~ "Career Development Awards (K)",
-            str_detect(activity_code, "^F") ~ "Fellowship (F)",
-            str_detect(activity_code, "^P") ~ "Program Project/Center Grants (P)",
-            str_detect(activity_code, "^T") ~ "Training Grants (T)",
-            str_detect(activity_code, "^U") ~ "Cooperative Agreements (U)",
-            str_detect(activity_code, "^S") ~ "Supplement (S)",
+          grant_type = dplyr::case_when(
+            stringr::str_detect(activity_code, "^R") ~ "Research Project Grants (R)",
+            stringr::str_detect(activity_code, "^K") ~ "Career Development Awards (K)",
+            stringr::str_detect(activity_code, "^F") ~ "Fellowship (F)",
+            stringr::str_detect(activity_code, "^P") ~ "Program Project/Center Grants (P)",
+            stringr::str_detect(activity_code, "^T") ~ "Training Grants (T)",
+            stringr::str_detect(activity_code, "^D") ~ "Development & Diversity Grants (D)",
+            stringr::str_detect(activity_code, "^U") ~ "Cooperative Agreements (U)",
+            stringr::str_detect(activity_code, "^S") ~ "Supplement (S)",
+            stringr::str_detect(activity_code, "^OT") ~ "Other Transactions (OT)",
+            stringr::str_detect(activity_code, "^G") ~ "Resource Grants (G)",
+            stringr::str_detect(activity_code, "^C") ~ "Construction Grants (C)",
             TRUE ~ "Other"
           )
         )
     }
+    
+    cat("Returning data with existing activity_code\n")
     return(nih_grants)
   }
   
-  # Otherwise extract from award number
+  # Now for datasets without activity_code column, extract from available fields
+  cat("No activity_code column, extracting from award numbers\n")
+  
+  # Create an empty activity_code column to start with
+  nih_grants$activity_code <- NA_character_
+  
+  # Extract from FAIN if available
+  if ("FAIN" %in% names(nih_grants)) {
+    cat("Extracting from FAIN column\n")
+    activity_codes <- stringr::str_extract(nih_grants$FAIN, "^[A-Z]\\d+")
+    nih_grants$activity_code <- ifelse(is.na(nih_grants$activity_code), activity_codes, nih_grants$activity_code)
+    cat("Extracted", sum(!is.na(activity_codes), na.rm=TRUE), "activity codes from FAIN\n")
+  }
+  
+  # Now assign grant types based on the extracted activity codes
+  cat("Assigning grant types based on extracted activity codes\n")
   nih_grants <- nih_grants |>
-    mutate(
-      # Extract activity code from award number
-      activity_code = case_when(
-        # From full_award_number if it exists
-        "full_award_number" %in% names(nih_grants) ~ 
-          str_extract(full_award_number, "(?<=\\d)[A-Z]\\d+(?:[A-Z]\\d*)?"),
-        # From Award Number if it exists
-        "Award Number" %in% names(nih_grants) ~ 
-          str_extract(`Award Number`, "(?<=\\d)[A-Z]\\d+(?:[A-Z]\\d*)?"),
-        # From FAIN if it exists
-        "FAIN" %in% names(nih_grants) ~ 
-          str_extract(FAIN, "(?<=\\d)[A-Z]\\d+(?:[A-Z]\\d*)?"),
-        TRUE ~ NA_character_
-      ),
-      # Extract mechanism type (first letter)
-      grant_type = case_when(
-        str_detect(activity_code, "^R") ~ "Research Project Grants (R)",
-        str_detect(activity_code, "^K") ~ "Career Development Awards (K)",
-        str_detect(activity_code, "^F") ~ "Fellowship (F)",
-        str_detect(activity_code, "^P") ~ "Program Project/Center Grants (P)",
-        str_detect(activity_code, "^T") ~ "Training Grants (T)",
-        str_detect(activity_code, "^U") ~ "Cooperative Agreements (U)",
-        str_detect(activity_code, "^S") ~ "Supplement (S)",
+    dplyr::mutate(
+      # Categorize based on first letter of activity code
+      grant_type = dplyr::case_when(
+        stringr::str_detect(activity_code, "^R") ~ "Research Project Grants (R)",
+        stringr::str_detect(activity_code, "^K") ~ "Career Development Awards (K)",
+        stringr::str_detect(activity_code, "^F") ~ "Fellowship (F)",
+        stringr::str_detect(activity_code, "^P") ~ "Program Project/Center Grants (P)",
+        stringr::str_detect(activity_code, "^T") ~ "Training Grants (T)",
+        stringr::str_detect(activity_code, "^D") ~ "Development & Diversity Grants (D)",
+        stringr::str_detect(activity_code, "^U") ~ "Cooperative Agreements (U)",
+        stringr::str_detect(activity_code, "^S") ~ "Supplement (S)",
+        stringr::str_detect(activity_code, "^OT") ~ "Other Transactions (OT)",
+        stringr::str_detect(activity_code, "^G") ~ "Resource Grants (G)",
+        stringr::str_detect(activity_code, "^C") ~ "Construction Grants (C)",
         TRUE ~ "Other"
       )
     )
   
+  # Print summary of grant types
+  if (!is.null(nih_grants$grant_type)) {
+    cat("Grant type distribution:\n")
+    grant_counts <- table(nih_grants$grant_type, useNA = "ifany")
+    print(grant_counts)
+  }
+  
   return(nih_grants)
-}
-
-# Create visualization of grant types
-create_grant_type_plot <- function(nih_grants) {
-  # Ensure we have activity codes - assign the result back to nih_grants
-  nih_grants <- extract_activity_code(nih_grants)
-  
-  # Add a debugging statement to check if grant_type exists
-  cat("Columns in nih_grants:", paste(names(nih_grants), collapse=", "), "\n")
-  cat("Number of grants before filtering:", nrow(nih_grants), "\n")
-  
-  # Count by grant type - changed to use dplyr::filter explicitly
-  grant_type_counts <- nih_grants |>
-    dplyr::filter(!is.na(grant_type)) |>  # Explicit package reference
-    group_by(grant_type) |>
-    summarize(
-      terminations = n(),
-      with_terms = sum(has_trigger_term, na.rm = TRUE),
-      percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
-      .groups = "drop"
-    ) |>
-    arrange(desc(terminations))
-  
-  cat("Number of grant types found:", nrow(grant_type_counts), "\n")
-  
-  # Create visualization
-  grant_type_plot <- ggplot(grant_type_counts |> 
-                              mutate(grant_type = reorder(grant_type, terminations)), 
-                            aes(x = grant_type, y = terminations, fill = percent_with_terms)) +
-    geom_col() +
-    scale_fill_gradient(low = "#5EECC2", high = "#FF7400", 
-                        name = "% with\ntrigger terms") +
-    geom_text(aes(label = terminations),
-              vjust = -0.5,
-              color = "#13151F",
-              fontface = "bold") +
-    theme_minimal() +
-    theme(
-      plot.title = element_text(size = 16, face = "bold"),
-      plot.subtitle = element_text(size = 14),
-      axis.title = element_text(size = 12, face = "bold")
-    ) +
-    labs(
-      title = "NIH Terminated Grants by Grant Type",
-      subtitle = "Color indicates percentage with trigger terms",
-      x = "Grant Type",
-      y = "Number of Terminations"
-    )
-  
-  return(grant_type_plot)
-}
-
-# Create visualization of specific activity codes (more detailed)
-create_activity_code_plot <- function(nih_grants, top_n = 15) {
-  # Ensure we have activity codes - assign the result back to nih_grants
-  nih_grants <- extract_activity_code(nih_grants)
-  
-  # Count by activity code
-  activity_counts <- nih_grants |>
-    dplyr::filter(!is.na(activity_code)) |>  # Explicit package reference
-    group_by(activity_code) |>
-    summarize(
-      terminations = n(),
-      with_terms = sum(has_trigger_term, na.rm = TRUE),
-      percent_with_terms = round(100 * mean(has_trigger_term, na.rm = TRUE)),
-      .groups = "drop"
-    ) |>
-    arrange(desc(terminations)) |>
-    head(top_n)
-  
-  # Create visualization
-  activity_plot <- ggplot(activity_counts |> 
-                            mutate(activity_code = reorder(activity_code, terminations)), 
-                          aes(x = activity_code, y = terminations, fill = percent_with_terms)) +
-    geom_col() +
-    scale_fill_gradient(low = "#5EECC2", high = "#FF7400", 
-                        name = "% with\ntrigger terms") +
-    geom_text(aes(label = terminations),
-              vjust = -0.5,
-              color = "#13151F",
-              fontface = "bold") +
-    theme_minimal() +
-    theme(
-      plot.title = element_text(size = 16, face = "bold"),
-      plot.subtitle = element_text(size = 14),
-      axis.title = element_text(size = 12, face = "bold")
-    ) +
-    labs(
-      title = paste("Top", top_n, "NIH Activity Codes in Terminated Grants"),
-      subtitle = "Color indicates percentage with trigger terms",
-      x = "Activity Code",
-      y = "Number of Terminations"
-    )
-  
-  return(activity_plot)
 }
 
 # Identify diversity supplements and F31 grants - FIXED VERSION

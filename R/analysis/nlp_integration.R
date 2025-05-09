@@ -1,6 +1,6 @@
 # nlp_integration.R - Integration with NLP analysis for term context classification
 
-extract_context <- function(text, term, window_size = 150) {
+extract_context <- function(text, term, window_size = 300) {
   # Handle NA case first
   if (is.na(text)) {
     return(NA_character_)
@@ -55,8 +55,8 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
       end_time = NA_character_,
       contexts_found = NA_integer_,
       contexts_analyzed = NA_integer_,
-      scientific_count = NA_integer_,
-      political_count = NA_integer_,
+      off_target_count = NA_integer_,
+      on_target_count = NA_integer_,
       ambiguous_count = NA_integer_
     )
     write_csv(progress_data, progress_file)
@@ -66,7 +66,7 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
     log_message(paste("Loaded progress file with", nrow(progress_data), "terms"), log_file)
   }
   
-  # Function to extract contexts for a term
+  # Function to extract contexts for a specific term
   extract_contexts_for_term <- function(term) {
     log_message(paste("Extracting contexts for term:", term), log_file)
     
@@ -89,7 +89,7 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
       term_grants <- dplyr::sample_n(term_grants, max_contexts_per_term)
     }
     
-    # Extract contexts
+    # Extract contexts - FIXED APPROACH
     contexts <- term_grants %>%
       dplyr::mutate(
         id = dplyr::row_number(),
@@ -102,14 +102,20 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
             log_message(paste("Error extracting context:", e$message), log_file, "ERROR")
             NA_character_
           })
-        }),
-        # Get title based on available columns
-        title = dplyr::case_when(
-          "Award Title" %in% colnames(term_grants) ~ term_grants$`Award Title`,
-          "project_title" %in% colnames(term_grants) ~ term_grants$project_title,
-          TRUE ~ "Unknown Title"
-        )
-      ) %>%
+        })
+      )
+    
+    # Handle title assignment separately to avoid vector length issues
+    if ("project_title" %in% names(contexts)) {
+      contexts$title <- contexts$project_title
+    } else if ("Award Title" %in% names(contexts)) {
+      contexts$title <- contexts[["Award Title"]]
+    } else {
+      contexts$title <- rep("Unknown Title", nrow(contexts))
+    }
+    
+    # Complete the processing
+    contexts <- contexts %>%
       dplyr::select(id, term, context, title, agency) %>%
       dplyr::filter(!is.na(context))
     
@@ -189,8 +195,8 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
             end_time = ifelse(term == !!term, as.character(Sys.time()), end_time),
             contexts_found = ifelse(term == !!term, 0, contexts_found),
             contexts_analyzed = ifelse(term == !!term, 0, contexts_analyzed),
-            scientific_count = ifelse(term == !!term, 0, scientific_count),
-            political_count = ifelse(term == !!term, 0, political_count),
+            off_target_count = ifelse(term == !!term, 0, off_target_count),
+            on_target_count = ifelse(term == !!term, 0, on_target_count),
             ambiguous_count = ifelse(term == !!term, 0, ambiguous_count)
           )
         write_csv(progress_data, progress_file)
@@ -228,9 +234,9 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
       }
       
       # Count classification results
-      scientific_count <- sum(classifications == "SCIENTIFIC")
-      political_count <- sum(classifications == "POLITICAL")
-      ambiguous_count <- sum(classifications == "AMBIGUOUS")
+      off_target_count <- sum(classifications == "off-target")
+      on_target_count <- sum(classifications == "on-target")
+      ambiguous_count <- sum(classifications == "ambiguous")
       
       # Combine results
       term_results <- contexts %>%
@@ -251,8 +257,8 @@ analyze_term_contexts_nlp <- function(all_grants, terms_to_analyze,
           end_time = ifelse(term == !!term, as.character(Sys.time()), end_time),
           contexts_found = ifelse(term == !!term, contexts_found, contexts_found),
           contexts_analyzed = ifelse(term == !!term, nrow(term_results), contexts_analyzed),
-          scientific_count = ifelse(term == !!term, scientific_count, scientific_count),
-          political_count = ifelse(term == !!term, political_count, political_count),
+          off_target_count = ifelse(term == !!term, off_target_count, off_target_count),
+          on_target_count = ifelse(term == !!term, on_target_count, on_target_count),
           ambiguous_count = ifelse(term == !!term, ambiguous_count, ambiguous_count)
         )
       write_csv(progress_data, progress_file)
@@ -320,9 +326,9 @@ create_nlp_summary <- function(results_list, output_dir, log_file) {
   # Save term summary
   write_csv(term_summary, file.path(output_dir, "term_classification_summary.csv"))
   
-  # Calculate false positive rates (SCIENTIFIC classification)
+  # Calculate false positive rates (off-target classification)
   fp_rates <- term_summary %>%
-    dplyr::filter(classification == "SCIENTIFIC") %>%
+    dplyr::filter(classification == "off-target") %>%
     dplyr::select(term, false_positive_rate = percentage) %>%
     dplyr::arrange(desc(false_positive_rate))
   
@@ -361,7 +367,7 @@ create_nlp_summary <- function(results_list, output_dir, log_file) {
     coord_flip() +
     labs(
       title = "Top 15 Terms with Highest False Positive Rates",
-      subtitle = "Percentage of contexts classified as scientific/technical",
+      subtitle = "Percentage of contexts classified as off-target",
       x = "Trigger Term",
       y = "False Positive Rate (%)"
     ) +

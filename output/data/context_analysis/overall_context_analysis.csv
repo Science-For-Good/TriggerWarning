@@ -1,4 +1,4 @@
 "category","count"
-"Scientific Context (False Positive)",711
-"Political/Social Context (True Hit)",1026
-"Ambiguous",0
+"Ambiguous",57
+"Off-Target (False Positive)",1241
+"On-Target (True Hit)",3990
