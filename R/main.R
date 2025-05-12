@@ -6,6 +6,9 @@ library(ggplot2)
 library(scales)
 library(lubridate)
 library(RColorBrewer)
+library(future)     
+library(furrr)      
+library(progressr)  
 
 # Define base paths
 data_dir <- "data"
@@ -347,16 +350,37 @@ if (run_nlp_analysis) {
   # Use all trigger terms without limitation
   terms_to_analyze <- trigger_terms$term
   
-  # Run the analysis with improved configuration
+  # Determine optimal parallel workers based on available cores
+  # Leave 1 core free for system processes
+  available_cores <- parallel::detectCores()
+  recommended_workers <- max(1, available_cores - 1)
+  
+  cat("System information:\n")
+  cat("- Available CPU cores:", available_cores, "\n")
+  cat("- Recommended parallel workers:", recommended_workers, "\n")
+  
+  cat("\nStarting large-scale NLP processing with the following parameters:\n")
+  cat("- Terms to analyze:", length(terms_to_analyze), "\n")
+  cat("- Max contexts per term: 6312\n")
+  cat("- Batch size: 2 terms at a time\n")
+  cat("- Cooldown period: 300 seconds (5 minutes) between batches\n")
+  cat("- Parallel workers:", recommended_workers, "\n")
+  
+  # Set up progress reporting for parallel processing
+  handlers(global = TRUE)
+  handlers("progress")
+  
+  # Run the analysis with optimized configuration for large-scale processing
   nlp_results <- analyze_term_contexts_nlp(
     all_grants = all_grants,
     terms_to_analyze = terms_to_analyze,
     api_function = gemini_api_function,
     output_dir = nlp_dirs$output_dir,
     log_file = nlp_dirs$log_file,
-    max_contexts_per_term = 50,  # Analyze up to 50 contexts per term
-    batch_size = 10,            # Process in batches of 10 terms
-    cooldown_period = 60        # Cool down for 60 seconds between batches
+    max_contexts_per_term = 6312,  # Analyze up to 6312 contexts per term (expanded)
+    batch_size = 2,                # Process in small batches of 2 terms (reduced from 10)
+    cooldown_period = 300,         # Cool down for 5 minutes between batches (increased from 60s)
+    parallel_workers = recommended_workers  # Use parallel processing
   )
   
   # Create combined visualizations of NLP results

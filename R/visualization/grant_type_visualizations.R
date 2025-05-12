@@ -1,4 +1,4 @@
-# Fixed grant_type_visualizations.R - Functions for analyzing grant types
+# grant_type_visualizations.R - Functions for analyzing grant types
 
 # Extract NIH activity code (grant type)
 extract_activity_code <- function(nih_grants) {
@@ -83,7 +83,7 @@ extract_activity_code <- function(nih_grants) {
   return(nih_grants)
 }
 
-# Identify diversity supplements and F31 grants - FIXED VERSION
+# Identify diversity supplements and F31 grants
 create_diversity_supplement_analysis <- function(nih_grants) {
   # Ensure we have activity codes
   nih_grants <- extract_activity_code(nih_grants)

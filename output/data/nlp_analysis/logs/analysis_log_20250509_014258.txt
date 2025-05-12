@@ -1,4 +1,0 @@
-[2025-05-09 01:42:58][INFO] Loading existing progress file 
-[2025-05-09 01:42:58][INFO] Loaded progress file with 197 terms 
-[2025-05-09 01:42:58][INFO] 0 terms pending analysis 
-[2025-05-09 01:42:58][INFO] No pending terms to analyze. Processing complete! 
