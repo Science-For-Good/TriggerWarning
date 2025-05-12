@@ -1,0 +1,9 @@
+[2025-05-12 10:57:27][INFO] Starting analysis with optimized parameters: 
+[2025-05-12 10:57:27][INFO] - max_contexts_per_term: 6312 
+[2025-05-12 10:57:27][INFO] - batch_size: 2 
+[2025-05-12 10:57:27][INFO] - cooldown_period: 300 seconds 
+[2025-05-12 10:57:27][INFO] - parallel_workers: 11 
+[2025-05-12 10:57:27][INFO] Loading existing progress file 
+[2025-05-12 10:57:27][INFO] Loaded progress file with 197 terms 
+[2025-05-12 10:57:27][INFO] 0 terms pending analysis 
+[2025-05-12 10:57:27][INFO] No pending terms to analyze. Processing complete! 
